@@ -8,6 +8,7 @@
 4. VFX design block
 5. Continuity audit
 6. Evolution log
+7. Production handoff
 
 ## 1. Scene brief
 
@@ -110,5 +111,23 @@ Reusable rule learned:
 
 Next controlled test:
 -
+```
+
+## 7. Production handoff
+
+```text
+Sequence / shot:
+Creative objective:
+Approved references and asset versions:
+Incoming continuity state:
+Outgoing continuity state:
+Performance and action requirements:
+Camera / lighting / VFX / sound requirements:
+Target model, engine, or production method:
+Dependencies and responsible roles:
+Technical delivery specification:
+Acceptance criteria:
+Known risks and fallback:
+Rights / safety review status:
 ```
 
