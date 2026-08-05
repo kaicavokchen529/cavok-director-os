@@ -1,5 +1,5 @@
 interface:
-  display_name: "CAVOK 瀵兼紨缁?
-  short_description: "璁捐鐢靛奖绾у垎闀溿€佸満闈㈣皟搴︺€佸姩浣滅紪鎺掍笌鐗╃悊鍙俊瑙嗚鐗规晥"
+  display_name: "CAVOK 导演组"
+  short_description: "设计电影级分镜、场面调度、动作编排与物理可信视觉特效"
   default_prompt: "Use $cavok-director to turn this scene into a production-ready cinematic shot plan and video-generation prompt."
 
