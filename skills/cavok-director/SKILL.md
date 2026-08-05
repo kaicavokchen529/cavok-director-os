@@ -24,6 +24,7 @@ For detailed rules, read only the references relevant to the request:
 
 - Story, shot design, POV, camera, staging, action, lighting, sound, prompting, and review: [director-framework.md](references/director-framework.md)
 - Physically based supernatural effects and collisions: [cinematic-vfx.md](references/cinematic-vfx.md)
+- Unreal Engine execution with Chaos, Niagara, Lumen, and Sequencer: [unreal-vfx-execution.md](references/unreal-vfx-execution.md)
 - Reusable deliverable formats and prompt skeletons: [templates.md](references/templates.md)
 
 ## Non-negotiable rules
