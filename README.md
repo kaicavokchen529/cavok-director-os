@@ -15,6 +15,8 @@
 - `references/generation-diagnostics.md`：生成结果故障分类、根因判断与最小修正
 - `references/performance-direction.md`：表演、潜台词、微行为与人物关系调度
 - `references/action-direction.md`：动作设计、战术节拍、能力配合与镜头覆盖
+- `references/cavok-action-signature.md`：CAVOK 条件式快切动作语言与空间保护规则
+- `references/camera-shot-decision-system.md`：根据内容选择景别、机位、焦段、运镜与镜头组
 - `references/editing-direction.md`：剪辑结构、节奏、转场与失败素材抢救
 - `references/sound-direction.md`：对白、环境、Foley、VFX 声音与混音透视
 - `references/color-finishing.md`：曝光、调色、纹理与多段生成画面统一
