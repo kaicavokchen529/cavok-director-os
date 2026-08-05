@@ -30,6 +30,8 @@ For detailed rules, read only the references relevant to the request:
 - Diagnosing generated footage and choosing minimum-cost corrections: [generation-diagnostics.md](references/generation-diagnostics.md)
 - Actor intention, subtext, micro-behavior, and relationship performance: [performance-direction.md](references/performance-direction.md)
 - Fight grammar, tactical beats, safety, coverage, and ability choreography: [action-direction.md](references/action-direction.md)
+- CAVOK's conditional fast-cut action signature and spatial safeguards: [cavok-action-signature.md](references/cavok-action-signature.md)
+- Content-driven shot, lens, camera position, movement, and coverage decisions: [camera-shot-decision-system.md](references/camera-shot-decision-system.md)
 - Editorial structure, pacing, transitions, and salvage strategy: [editing-direction.md](references/editing-direction.md)
 - Production sound, Foley, dialogue, VFX sound, perspective, and mix: [sound-direction.md](references/sound-direction.md)
 - Exposure, color, texture, temporal consistency, and image finishing: [color-finishing.md](references/color-finishing.md)
@@ -43,6 +45,7 @@ For detailed rules, read only the references relevant to the request:
 - Do not change POV ownership accidentally.
 - Do not separate characters before the scripted trigger if their initial physical relationship matters.
 - Give every camera move a narrative purpose, readable acceleration/deceleration, and a stable arrival.
+- Choose camera language from story, information, emotion, relationship, geography, and rhythm; never apply fast cutting or signature shots by default.
 - Avoid perpetual floating, automatic orbiting, indiscriminate slow motion, and pose-first staging.
 - Describe visible evidence instead of abstract praise such as “epic,” “premium,” or “cinematic.”
 - Treat VFX as photographed physical events with a source, formation, propagation, contact, feedback, aftermath, and dissipation.
