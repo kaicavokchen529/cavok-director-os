@@ -14,7 +14,7 @@
 
 Treat VFX as an anomalous event photographed in a real location:
 
-**source 鈫?precursor 鈫?formation 鈫?propagation 鈫?contact 鈫?physical feedback 鈫?aftermath 鈫?dissipation**
+**source → precursor → formation → propagation → contact → physical feedback → aftermath → dissipation**
 
 Never substitute brightness, colored particles, or a generic explosion for physical causality.
 
