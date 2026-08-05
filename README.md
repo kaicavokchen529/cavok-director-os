@@ -9,6 +9,7 @@
 - `SKILL.md`：核心工作流、强制规则与交付标准
 - `references/director-framework.md`：故事、视角、调度、摄影、动作、灯光、声音与审核体系
 - `references/cinematic-vfx.md`：电影级物理 VFX 导演模块
+- `references/unreal-vfx-execution.md`：Chaos、Niagara、Lumen 与 Sequencer 的 Unreal 执行层
 - `references/templates.md`：分镜表、生成提示词、VFX、连续性与迭代模板
 - `agents/openai.yaml`：Codex UI 元数据
 
