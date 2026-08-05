@@ -10,38 +10,41 @@ description: 将小说、剧本、大纲或概念转化为可拍摄、可剪辑�
 ## 工作原则
 
 - 戏剧优先。镜头、构图、运镜、动作、特效和声音必须服务信息、人物关系与情绪。
-- 按戏剧节拍切镜，不按动作数量机械拆镜。信息、注意力、情绪、权力、空间或节奏重音变化时才优先切镜。
-- 先调度演员，再决定摄影机。摄影机无明确理由时优先固定。
-- 长镜头必须能回答“为什么不能剪”；否则拆镜。AI 视频单个 Part 原则上不超过 15 秒。
-- 真人感追求 `Believable Cinema`：物理、表演、摄影、光线、材质和环境互动可信，而非单纯提高锐度或毛孔细节。
-- 所有部门意见必须由总导演统一，不得互相矛盾。
+- 按戏剧节拍切镜，不按动作数量机械拆镜。
+- 先调度演员，再决定摄影机。
+- 长镜头必须回答“为什么不能剪”。
+- 真人感追求 Believable Cinema：物理、表演、摄影、光线、材质和环境互动可信。
+- VFX必须按照真实物理事件设计，而不是游戏技能表现。
 
 ## 执行流程
 
-1. 识别媒介、现实等级、类型与摄影策略。用户未指定时，根据文本提出最合理默认值并明确说明。
-2. 完成场景目标、人物目标、冲突、失败代价、情绪弧线、信息弧线与视觉母题分析。
-3. 拆分 Drama Beat。每个 Beat 写明人物目标、事件、情绪变化、新信息、关系变化与导演意图。
-4. 设计表演、Blocking 和信息揭示，再设计构图、摄影、动作、VFX、灯光、声音和剪辑。
-5. 建立 Continuity Lock，锁定人物、道具、空间、光源、时间、天气和 VFX 状态。
-6. 输出分镜表、AI 视频执行稿、开始帧/结束帧及必要的英文 Camera Prompt。
-7. 执行 Director QC；发现冲突先修正再交付。
+1. 识别媒介、现实等级、类型与摄影策略。
+2. 分析场景目标、人物目标、冲突和视觉母题。
+3. 拆分 Drama Beat。
+4. 设计表演、Blocking、构图、摄影、动作、VFX、灯光、声音和剪辑。
+5. 建立 Continuity Lock。
+6. 输出分镜表、AI视频执行稿和Prompt。
+7. 执行 Director QC。
 
 ## 按需加载参考
 
-- 选择真人、动画、风格化或混合媒介时，读取 [production-modes.md](references/production-modes.md)。
-- 设计表演、调度、摄影、构图和剪辑时，读取 [direction-camera.md](references/direction-camera.md)。
-- 设计动作、速度、消散、重构或超自然效果时，读取 [action-vfx.md](references/action-vfx.md)。
-- 设计灯光、材质、次级运动和声音时，读取 [reality-sound.md](references/reality-sound.md)。
-- 输出分镜或 Seedance 执行稿时，读取 [output-contract.md](references/output-contract.md)。
-- 终审或从项目经验中迭代 Skill 时，读取 [continuity-qc-evolution.md](references/continuity-qc-evolution.md)。
+- 真人、动画、混合媒介模式：读取 references/production-modes.md
+- 摄影、构图、运镜：读取 references/direction-camera.md
+- 动作与基础特效：读取 references/action-vfx.md
+- 灯光、材质、声音：读取 references/reality-sound.md
+- 分镜输出规范：读取 references/output-contract.md
+- 连续性和Skill迭代：读取 references/continuity-qc-evolution.md
+- 电影级VFX设计：读取 references/vfx-cinematic-direction.md
 
-只读取与当前任务有关的参考文件，不要一次载入全部模块。
+只读取当前任务需要的模块。
 
-## 输出尺度
+## VFX核心规则
 
-- 用户只要方向建议时，输出导演分析与少量关键镜头，不强制展开完整生产表。
-- 用户要求完整分镜、拍摄脚本或 AI 视频 Prompt 时，严格使用 `output-contract.md`。
-- 信息缺失但不影响核心方案时，作出可逆的专业假设并标注；会改变故事、角色或制作规模时再询问用户。
+所有能力必须遵循：
+
+来源 → 形成 → 材质 → 光影互动 → 物理反馈 → 余波 → 消散
+
+禁止只写“生成火焰”“出现冰矛”。必须描述其形成过程、环境影响和生命周期。
 
 ## 最终原则
 
