@@ -80,7 +80,7 @@ Choose movement by dramatic function:
 
 Specify start, acceleration, deceleration, arrival, and hold. Let subjects move inside a stable composition when the scene is about observation. Do not use orbiting as decoration.
 
-Use lens language cautiously. Prefer perceptual results鈥攃ompressed distance, intimate proximity, controlled distortion, deep spatial reading鈥攐ver arbitrary millimeter numbers unless production specifications are needed.
+Use lens language cautiously. Prefer perceptual results—compressed distance, intimate proximity, controlled distortion, deep spatial reading—over arbitrary millimeter numbers unless production specifications are needed.
 
 ## 5. Environment and lighting
 
@@ -116,7 +116,7 @@ Build sound in layers:
 - impact, debris, and tail;
 - dialogue and intentional silence.
 
-Use sound bridges to motivate cuts. Reduce ambience selectively before a reveal; do not mute the world without cause. Describe dialogue performance鈥攄istance, breath, restraint, overlap鈥攔ather than only the words.
+Use sound bridges to motivate cuts. Reduce ambience selectively before a reveal; do not mute the world without cause. Describe dialogue performance—distance, breath, restraint, overlap—rather than only the words.
 
 ## 8. Prompt construction
 
@@ -132,7 +132,7 @@ Order the prompt as the audience experiences the scene:
 8. end frame and transition;
 9. targeted negatives.
 
-Use concrete verbs and visible states. Replace 鈥渄ramatic confrontation鈥?with the exact gaze, distance, movement, shadow, and sound that create it. Avoid contradictory camera instructions and overloading one time interval with too many actions.
+Use concrete verbs and visible states. Replace “dramatic confrontation” with the exact gaze, distance, movement, shadow, and sound that create it. Avoid contradictory camera instructions and overloading one time interval with too many actions.
 
 ## 9. Review and iteration
 
