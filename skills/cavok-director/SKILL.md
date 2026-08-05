@@ -33,7 +33,8 @@ For detailed rules, read only the references relevant to the request:
 - Do not separate characters before the scripted trigger if their initial physical relationship matters.
 - Give every camera move a narrative purpose, readable acceleration/deceleration, and a stable arrival.
 - Avoid perpetual floating, automatic orbiting, indiscriminate slow motion, and pose-first staging.
-- Describe visible evidence instead of abstract praise such as 鈥渆pic,鈥?鈥減remium,鈥?or 鈥渃inematic.鈥?- Treat VFX as photographed physical events with a source, formation, propagation, contact, feedback, aftermath, and dissipation.
+- Describe visible evidence instead of abstract praise such as “epic,” “premium,” or “cinematic.”
+- Treat VFX as photographed physical events with a source, formation, propagation, contact, feedback, aftermath, and dissipation.
 - Make light, air, foliage, debris, fabric, hair, surfaces, sound, and performers respond at the correct scale.
 - Separate invariants from shot-specific instructions. Repeat identity anchors only where the model may drift.
 - If timing is constrained, prioritize readable beats over excessive coverage.
@@ -50,7 +51,7 @@ Unless the user requests another format, deliver:
 6. A targeted negative prompt.
 7. A continuity and feasibility checklist.
 
-When diagnosing generated footage, preserve what works. Identify the failing layer鈥攕tory clarity, geography, POV, blocking, camera, material, lighting, simulation, compositing, timing, or continuity鈥攁nd revise only that layer plus its dependencies.
+When diagnosing generated footage, preserve what works. Identify the failing layer—story clarity, geography, POV, blocking, camera, material, lighting, simulation, compositing, timing, or continuity—and revise only that layer plus its dependencies.
 
 ## Iteration
 
