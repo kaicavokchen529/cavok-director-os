@@ -25,6 +25,16 @@ For detailed rules, read only the references relevant to the request:
 - Story, shot design, POV, camera, staging, action, lighting, sound, prompting, and review: [director-framework.md](references/director-framework.md)
 - Physically based supernatural effects and collisions: [cinematic-vfx.md](references/cinematic-vfx.md)
 - Unreal Engine execution with Chaos, Niagara, Lumen, and Sequencer: [unreal-vfx-execution.md](references/unreal-vfx-execution.md)
+- Character, prop, action, lighting, damage, and VFX continuity: [continuity-direction.md](references/continuity-direction.md)
+- Adapting the same directing plan to different AI video models: [model-adapters.md](references/model-adapters.md)
+- Diagnosing generated footage and choosing minimum-cost corrections: [generation-diagnostics.md](references/generation-diagnostics.md)
+- Actor intention, subtext, micro-behavior, and relationship performance: [performance-direction.md](references/performance-direction.md)
+- Fight grammar, tactical beats, safety, coverage, and ability choreography: [action-direction.md](references/action-direction.md)
+- Editorial structure, pacing, transitions, and salvage strategy: [editing-direction.md](references/editing-direction.md)
+- Production sound, Foley, dialogue, VFX sound, perspective, and mix: [sound-direction.md](references/sound-direction.md)
+- Exposure, color, texture, temporal consistency, and image finishing: [color-finishing.md](references/color-finishing.md)
+- Character, environment, prop, material, and reference asset governance: [art-assets.md](references/art-assets.md)
+- Shot planning, dependencies, budgets, review gates, rights, and release safety: [production-legal.md](references/production-legal.md)
 - Reusable deliverable formats and prompt skeletons: [templates.md](references/templates.md)
 
 ## Non-negotiable rules
