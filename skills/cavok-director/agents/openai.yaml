@@ -1,0 +1,5 @@
+interface:
+  display_name: "CAVOK 导演组"
+  short_description: "设计电影级分镜、场面调度、动作编排与物理可信视觉特效"
+  default_prompt: "Use $cavok-director to turn this scene into a production-ready cinematic shot plan and video-generation prompt."
+
