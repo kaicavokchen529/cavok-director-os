@@ -60,6 +60,8 @@ Avoid symmetrical hero poses, simultaneous generic reactions, unsupported body a
 
 ## 4. Camera language
 
+Choose camera behavior only after diagnosing story function, audience information, viewpoint, relationship change, geography, and rhythm. Treat stillness as a deliberate option. Use signature movement only when removing it would weaken meaning, emotion, or spatial understanding.
+
 Choose framing by information density:
 
 - wide: geography, power relationship, path, or scale;
