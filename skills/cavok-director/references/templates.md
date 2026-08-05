@@ -29,7 +29,7 @@ Continuity-critical actions and props:
 
 | Shot | Time | Viewpoint | Size / angle | Camera behavior | Blocking and performance | Image / lighting / VFX | Sound | Continuity purpose |
 |---|---:|---|---|---|---|---|---|---|
-| 01 | 00:00鈥?0:03 |  |  |  |  |  |  |  |
+| 01 | 00:00–00:03 |  |  |  |  |  |  |  |
 
 Keep each row centered on one beat. If a shot contains several actions, state their exact order.
 
@@ -42,13 +42,13 @@ Duration, aspect ratio, frame rate, live-action/animation reality level, no subt
 [INVARIANTS]
 Stable character identities, wardrobe, props, geography, weather, time of day, light direction.
 
-[00:00鈥?0:XX]
+[00:00–00:XX]
 Viewpoint owner; framing; initial composition; character action and gaze order; camera start, movement, arrival, and hold; sound.
 
-[00:XX鈥?0:YY]
+[00:XX–00:YY]
 Trigger; reaction order; blocking transition; focus or viewpoint change; lighting and environmental response.
 
-[00:YY鈥揈ND]
+[00:YY–END]
 Payoff; contact and consequence; aftermath; final composition and clean transition point.
 
 [QUALITY LOCK]
