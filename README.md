@@ -10,6 +10,16 @@
 - `references/director-framework.md`：故事、视角、调度、摄影、动作、灯光、声音与审核体系
 - `references/cinematic-vfx.md`：电影级物理 VFX 导演模块
 - `references/unreal-vfx-execution.md`：Chaos、Niagara、Lumen 与 Sequencer 的 Unreal 执行层
+- `references/continuity-direction.md`：人物、动作、道具、灯光、伤势与 VFX 连续性
+- `references/model-adapters.md`：不同 AI 视频模型的能力探测与提示词适配
+- `references/generation-diagnostics.md`：生成结果故障分类、根因判断与最小修正
+- `references/performance-direction.md`：表演、潜台词、微行为与人物关系调度
+- `references/action-direction.md`：动作设计、战术节拍、能力配合与镜头覆盖
+- `references/editing-direction.md`：剪辑结构、节奏、转场与失败素材抢救
+- `references/sound-direction.md`：对白、环境、Foley、VFX 声音与混音透视
+- `references/color-finishing.md`：曝光、调色、纹理与多段生成画面统一
+- `references/art-assets.md`：角色、场景、道具、材质与参考资产管理
+- `references/production-legal.md`：制片拆解、预算、审核、版权与发布安全
 - `references/templates.md`：分镜表、生成提示词、VFX、连续性与迭代模板
 - `agents/openai.yaml`：Codex UI 元数据
 
