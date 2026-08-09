@@ -16,6 +16,7 @@
 - `references/performance-direction.md`：表演、潜台词、微行为与人物关系调度
 - `references/action-direction.md`：动作设计、战术节拍、能力配合与镜头覆盖
 - `references/cavok-action-signature.md`：CAVOK 条件式快切动作语言与空间保护规则
+- `references/action-prompt-engineering.md`：动作链路、速度、力量、运镜触发、人物比例与模型提示词压缩
 - `references/camera-shot-decision-system.md`：根据内容选择景别、机位、焦段、运镜与镜头组
 - `references/editing-direction.md`：剪辑结构、节奏、转场与失败素材抢救
 - `references/sound-direction.md`：对白、环境、Foley、VFX 声音与混音透视
@@ -56,4 +57,3 @@ Use $cavok-director to 保留现有镜头构图，只诊断并修正冰火碰撞
 - 游戏 CG 与剧情预演
 - AI 视频分镜和提示词
 - 生成结果的导演复盘与规则沉淀
-
