@@ -29,6 +29,8 @@ Choose:
 - whether dialogue and audio are generated together or in post;
 - whether continuity is driven by first frame, last frame, character reference, or external compositing;
 - how much camera language the model follows reliably;
+- which internal style terms must be translated into observable behavior;
+- the shortest prompt that preserves identity, causal action, camera, and continuity;
 - which negatives are effective and which create prompt competition.
 
 ## Stable adapter record
@@ -51,5 +53,6 @@ Retry strategy:
 
 Before a costly scene, run a short test matrix that changes one variable at a time: identity reference, shot duration, camera movement, action count, VFX density, and prompt length. Promote observations into the adapter only after repeated evidence. Label undocumented behavior as empirical, not guaranteed.
 
-Never let adapter constraints silently alter story logic. Report when the directing plan must be split, simplified, or executed through compositing.
+Do not assume that a model recognizes a project-specific style name. Keep that name in the director layer and express its intended timing, movement, contact, and image behavior directly in the execution prompt unless controlled tests prove the token is useful.
 
+Never let adapter constraints silently alter story logic. Report when the directing plan must be split, simplified, or executed through compositing.
