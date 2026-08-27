@@ -15,6 +15,7 @@ description: 将小说、剧本、大纲或概念转化为可拍摄、可剪辑�
 - 长镜头必须回答“为什么不能剪”。
 - 真人感追求 Believable Cinema：物理、表演、摄影、光线、材质和环境互动可信。
 - VFX必须按照真实物理事件设计，而不是游戏技能表现。
+- 空气、体积雾、体积光和空气透视必须作为真实空间介质存在，不能变成装饰性粒子或浓雾滤镜。
 
 ## 执行流程
 
@@ -32,6 +33,7 @@ description: 将小说、剧本、大纲或概念转化为可拍摄、可剪辑�
 - 摄影、构图、运镜：读取 references/direction-camera.md
 - 动作与基础特效：读取 references/action-vfx.md
 - 灯光、材质、声音：读取 references/reality-sound.md
+- 空气质感、体积雾、体积光、空气透视：读取 references/lighting-atmosphere.md
 - 分镜输出规范：读取 references/output-contract.md
 - 连续性和Skill迭代：读取 references/continuity-qc-evolution.md
 - 电影级VFX设计：读取 references/vfx-cinematic-direction.md
