@@ -16,29 +16,45 @@ description: 将小说、剧本、大纲或概念转化为可拍摄、可剪辑�
 - 真人感追求 Believable Cinema：物理、表演、摄影、光线、材质和环境互动可信。
 - VFX必须按照真实物理事件设计，而不是游戏技能表现。
 - 空气、体积雾、体积光和空气透视必须作为真实空间介质存在，不能变成装饰性粒子或浓雾滤镜。
+- AI执行优先稳定身份、空间、状态与因果，不用无效形容词堆叠Prompt。
+
+## 导演决策链
+
+剧情意图 → Scene Objective → Drama Beat → 人物目标 → 表演 → Blocking → 信息控制 → 构图 → Camera → Action → VFX → Lighting → Sound → Editing → AI Execution → Continuity → Director QC
 
 ## 执行流程
 
 1. 识别媒介、现实等级、类型与摄影策略。
-2. 分析场景目标、人物目标、冲突和视觉母题。
-3. 拆分 Drama Beat。
-4. 设计表演、Blocking、构图、摄影、动作、VFX、灯光、声音和剪辑。
-5. 建立 Continuity Lock。
-6. 输出分镜表、AI视频执行稿和Prompt。
-7. 执行 Director QC。
+2. 分析Scene Objective、人物目标、冲突、代价、信息与视觉母题。
+3. 拆分Drama Beat，标记新信息、情绪、权力与空间变化。
+4. 设计表演与Blocking，再决定构图、摄影机和剪辑。
+5. 设计动作、VFX、灯光、空气介质、声音与美术环境。
+6. 建立Character / Environment / Continuity Lock。
+7. 按AI模型执行限制拆Part，写Start/End Frame和Prompt。
+8. 执行Director QC；失败时定位根因后再修改对应模块。
 
 ## 按需加载参考
 
-- 真人、动画、混合媒介模式：读取 references/production-modes.md
-- 摄影、构图、运镜：读取 references/direction-camera.md
-- 动作与基础特效：读取 references/action-vfx.md
-- 灯光、材质、声音：读取 references/reality-sound.md
+- 真人、动画、混合媒介：读取 references/production-modes.md
+- 戏剧、Beat、信息控制：读取 references/story-drama-information.md
+- 表演与场面调度：读取 references/performance-blocking.md
+- 构图、焦段与基础摄影：读取 references/direction-camera.md
+- 高级推拉摇移、复合运镜与Camera Breathing：读取 references/camera-movement-grammar.md
+- 剪辑、时间控制与节奏：读取 references/editing-rhythm.md
+- 动作设计与战斗地理：读取 references/action-choreography.md
+- 动作物理、残影与基础VFX生命周期：读取 references/action-vfx.md
+- 电影级VFX材质、形成与物理反馈：读取 references/vfx-cinematic-direction.md
+- 能量颜色、人物光影、刀轨与残像色谱：读取 references/vfx-color-energy-language.md
+- 电影灯光：读取 references/cinematic-lighting.md
 - 空气质感、体积雾、体积光、空气透视：读取 references/lighting-atmosphere.md
-- 分镜输出规范：读取 references/output-contract.md
-- 连续性和Skill迭代：读取 references/continuity-qc-evolution.md
-- 电影级VFX设计：读取 references/vfx-cinematic-direction.md
+- 真人材质、次级运动与声音：读取 references/reality-sound.md
+- 角色固定设定与跨镜连续：读取 references/character-bible.md
+- 场景、美术、材料与破坏连续：读取 references/production-design.md
+- AI视频Prompt预算、角色Alias、状态锚点与重试策略：读取 references/ai-video-execution.md
+- 分镜与AI执行稿输出格式：读取 references/output-contract.md
+- 连续性、终审和Skill进化：读取 references/continuity-qc-evolution.md
 
-只读取当前任务需要的模块。
+只读取当前任务需要的模块，不要无差别加载全部reference。
 
 ## VFX核心规则
 
@@ -47,6 +63,10 @@ description: 将小说、剧本、大纲或概念转化为可拍摄、可剪辑�
 来源 → 形成 → 材质 → 光影互动 → 物理反馈 → 余波 → 消散
 
 禁止只写“生成火焰”“出现冰矛”。必须描述其形成过程、环境影响和生命周期。
+
+## AI执行原则
+
+复杂镜头优先遵守One Major Change Per Beat。人物动作与摄影机运动分开写；参考图角色建立稳定Alias；每个Part的End Frame必须成为下一Part的Start Frame基准。
 
 ## 最终原则
 
