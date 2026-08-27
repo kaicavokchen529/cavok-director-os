@@ -31,6 +31,7 @@ For detailed rules, read only the references relevant to the request:
 - Actor intention, subtext, micro-behavior, and relationship performance: [performance-direction.md](references/performance-direction.md)
 - Fight grammar, tactical beats, safety, coverage, and ability choreography: [action-direction.md](references/action-direction.md)
 - CAVOK's conditional fast-cut action signature and spatial safeguards: [cavok-action-signature.md](references/cavok-action-signature.md)
+- Model-ready action prompt grammar, tempo, force, transitions, camera triggers, proportion locks, and prompt compression: [action-prompt-engineering.md](references/action-prompt-engineering.md)
 - Content-driven shot, lens, camera position, movement, and coverage decisions: [camera-shot-decision-system.md](references/camera-shot-decision-system.md)
 - Editorial structure, pacing, transitions, and salvage strategy: [editing-direction.md](references/editing-direction.md)
 - Production sound, Foley, dialogue, VFX sound, perspective, and mix: [sound-direction.md](references/sound-direction.md)
@@ -70,4 +71,3 @@ When diagnosing generated footage, preserve what works. Identify the failing lay
 ## Iteration
 
 After each generation, record: project, scene, successful choices, failures, model-specific errors, new reusable rule, and next test. Promote a lesson into this skill only when it generalizes beyond one shot or one model.
-
