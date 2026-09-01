@@ -1,59 +1,57 @@
 # CAVOK Director OS
 
-面向 AI 影视创作的导演组 Skill：把故事、角色设定或粗略画面想法整理为可执行的电影级分镜、场面调度、动作设计、声音设计与视频生成提示词。
+面向 AI 影视创作的导演组 Skill：把故事、角色设定、参考图或粗略画面想法整理为可执行的电影级导演方案、分镜、场面调度、动作/VFX设计、声音设计与视频生成提示词。
 
-## 当前 Skill
+## 唯一正式 Skill
+
+本仓库唯一 Source of Truth：
 
 `skills/cavok-director/`
 
-- `SKILL.md`：核心工作流、强制规则与交付标准
-- `references/director-framework.md`：故事、视角、调度、摄影、动作、灯光、声音与审核体系
-- `references/cinematic-vfx.md`：电影级物理 VFX 导演模块
-- `references/unreal-vfx-execution.md`：Chaos、Niagara、Lumen 与 Sequencer 的 Unreal 执行层
-- `references/continuity-direction.md`：人物、动作、道具、灯光、伤势与 VFX 连续性
-- `references/model-adapters.md`：不同 AI 视频模型的能力探测与提示词适配
-- `references/generation-diagnostics.md`：生成结果故障分类、根因判断与最小修正
-- `references/performance-direction.md`：表演、潜台词、微行为与人物关系调度
-- `references/action-direction.md`：动作设计、战术节拍、能力配合与镜头覆盖
-- `references/cavok-action-signature.md`：CAVOK 条件式快切动作语言与空间保护规则
-- `references/camera-shot-decision-system.md`：根据内容选择景别、机位、焦段、运镜与镜头组
-- `references/editing-direction.md`：剪辑结构、节奏、转场与失败素材抢救
-- `references/sound-direction.md`：对白、环境、Foley、VFX 声音与混音透视
-- `references/color-finishing.md`：曝光、调色、纹理与多段生成画面统一
-- `references/art-assets.md`：角色、场景、道具、材质与参考资产管理
-- `references/production-legal.md`：制片拆解、预算、审核、版权与发布安全
-- `references/templates.md`：分镜表、生成提示词、VFX、连续性与迭代模板
-- `agents/openai.yaml`：Codex UI 元数据
+安装、引用、迭代和版本维护均以该目录为准。仓库根目录不再维护第二套 SKILL / references / failures / templates。
 
-## 核心原则
+正式包包括：
 
-镜头不是漂亮画面的堆叠，而是一系列具有明确视角、空间关系和因果顺序的可拍摄事件。
+- `SKILL.md`：总导演工作流、路由、强制规则与交付标准
+- `references/`：导演、摄影、表演、动作、VFX、灯光、空气、声音、剪辑、调色、连续性、AI模型适配、Unreal、制片等专业模块
+- `failures/`：生成失败症状、根因与最小修正库
+- `templates/`：Project / Character / Scene / Continuity / Director Review 持久项目模板
+- `agents/openai.yaml`：Skill UI 元数据
 
-视觉特效也不是发光装饰。所有能力和异常现象都应具备：
+## 核心导演逻辑
 
-> 来源 → 前兆 → 形成 → 传播 → 接触 → 反馈 → 余波 → 消散
+> 剧情意图 → Scene Objective → Drama Beat → 人物目标 → 表演 → Blocking → 信息控制 → 构图 → Camera → Action → VFX → Lighting / Atmosphere → Sound → Editing → AI Execution → Continuity → Director QC
 
-## 使用示例
+VFX按真实事件设计：
+
+> Source → Precursor → Formation → Material → Propagation → Contact → Physical Feedback → Aftermath → Dissipation
+
+强冲击进一步加入：
+
+> Anticipation → Time Compression / Expansion → Contact → Impact Frame → Compression → Deformation → Energy Release → Secondary Reaction → Inertia → Recovery → Residual
+
+## 使用
 
 ```text
-Use $cavok-director to 把下面的剧情整理成 15 秒真人电影质感分镜，并输出可直接用于视频生成模型的完整提示词。
+Use $cavok-director to 把下面的剧情整理成真人电影级导演方案与可执行AI视频提示词。
 ```
 
-也可以用于诊断已有生成结果：
+也可以用于只修某一层：
 
 ```text
-Use $cavok-director to 保留现有镜头构图，只诊断并修正冰火碰撞的材质、光影与物理反馈。
+Use $cavok-director to 保留现有构图与表演，只诊断并修正这次冰火碰撞的VFX材质、冲击节奏与环境反馈。
 ```
 
 ## 安装
 
-将 `skills/cavok-director` 目录放入 Codex 的 Skills 目录，或在支持仓库 Skill 的环境中直接引用该目录。
+将 `skills/cavok-director` 目录放入支持 Skills 的环境中，或直接引用该目录。
 
 ## 适用范围
 
 - 真人电影与真人漫改
-- 动画与国漫 3D
-- 游戏 CG 与剧情预演
-- AI 视频分镜和提示词
-- 生成结果的导演复盘与规则沉淀
-
+- 动画与 3D CG
+- 游戏剧情 CG / Unreal Cinematic
+- AI 视频分镜与生成提示词
+- 动作与超能力 VFX
+- 多段生成连续性管理
+- 生成结果导演复盘、Failure Library 与规则沉淀
