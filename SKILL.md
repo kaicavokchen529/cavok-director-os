@@ -16,6 +16,7 @@ description: 将小说、剧本、大纲或概念转化为可拍摄、可剪辑�
 - 长镜头必须回答“为什么不能剪”。
 - 真人感追求 Believable Cinema：物理、表演、摄影、光线、材质和环境互动可信。
 - VFX必须按照真实物理事件设计，而不是游戏技能表现。
+- VFX不仅要设计材质和光效，还要设计时间曲线、冲击帧、压缩、形变、传播、余波与恢复节奏。
 - 空气、体积雾、体积光和空气透视必须作为真实空间介质存在，不能变成装饰性粒子或浓雾滤镜。
 - AI执行优先稳定身份、空间、状态与因果，不用无效形容词堆叠Prompt。
 - 参考知名导演时，只提炼公开作品中可观察的镜头语法、空间组织、节奏和信息控制，不要求复制署名风格。
@@ -31,7 +32,7 @@ description: 将小说、剧本、大纲或概念转化为可拍摄、可剪辑�
 3. 拆分Drama Beat，标记新信息、情绪、权力与空间变化。
 4. 设计表演与Blocking，再决定构图、景别、镜头运动和剪辑。
 5. 选择运镜时先读取景别×运镜决策矩阵；需要参考导演方法时再读取镜头语法库。
-6. 设计动作、VFX、灯光、空气介质、声音与美术环境。
+6. 设计动作、VFX、灯光、空气介质、声音与美术环境；强动作或能力接触同时设计Timing / Impact / Deformation。
 7. 建立Character / Environment / Continuity Lock。
 8. 按AI模型执行限制拆Part，写Start/End Frame和Prompt。
 9. 执行Director QC；失败时先查Failure Library，定位根因后再修改对应模块。
@@ -52,6 +53,7 @@ description: 将小说、剧本、大纲或概念转化为可拍摄、可剪辑�
 - 电影级VFX形成、物理反馈：读取 references/vfx-cinematic-direction.md
 - 冰火雷电、烟、水、空间等VFX真实材质：读取 references/vfx-material-library.md
 - 能量颜色、人物光影、刀轨与残像色谱：读取 references/vfx-color-energy-language.md
+- 时间缓慢/加速、Impact Frame、Hit Stop、Compression、Deformation、Shockwave和Lens Stress：读取 references/vfx-timing-impact-deformation.md
 - 电影灯光：读取 references/cinematic-lighting.md
 - 空气质感、体积雾、体积光、空气透视：读取 references/lighting-atmosphere.md
 - 真人材质、次级运动与声音：读取 references/reality-sound.md
@@ -75,7 +77,11 @@ description: 将小说、剧本、大纲或概念转化为可拍摄、可剪辑�
 
 来源 → 形成 → 材质 → 光影互动 → 物理反馈 → 余波 → 消散
 
-禁止只写“生成火焰”“出现冰矛”。必须描述其形成过程、环境影响和生命周期。
+强动作或能力接触进一步遵循：
+
+Anticipation → Time Compression / Time Expansion → Contact → Impact Frame → Compression → Deformation → Energy Release → Secondary Reaction → Inertia → Recovery → Residual
+
+禁止只写“生成火焰”“出现冰矛”或“发生爆炸”。必须描述形成、材质、时间曲线、接触、受力、环境反馈和生命周期。普通攻击不得滥用终结技级时间与视觉过载。
 
 ## AI执行原则
 
