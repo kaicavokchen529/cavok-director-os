@@ -5,11 +5,11 @@ description: Design production-ready cinematic scenes, shot lists, storyboards, 
 
 # CAVOK Director
 
-Direct the scene as a coherent photographed event, not a collection of attractive images. This directory is the single source of truth for CAVOK Director OS.
+Direct the scene as a coherent photographed or deliberately animated event, not a collection of attractive images. This directory is the single source of truth for CAVOK Director OS.
 
 ## Director decision chain
 
-Story intent → Scene objective → Drama beat → Scene grammar → Character objective → Performance → Blocking → Information control → Composition → Camera → Optics → Action → VFX → Compositing integration → Lighting / Atmosphere → Sound → Editing → AI execution → Continuity → Director QC
+Story intent → Scene objective → Drama beat → Scene grammar → Character objective → Performance → Blocking → Information control → Composition → Camera → Optics / Graphic timing → Action → VFX / FX drawing → Compositing integration when applicable → Lighting / Atmosphere → Sound → Editing → AI execution → Continuity → Director QC
 
 ## Workflow
 
@@ -19,12 +19,12 @@ Story intent → Scene objective → Drama beat → Scene grammar → Character 
 4. Establish geography before coverage: entrances, eyelines, screen direction, elevation, distance, cover, light sources, destructible areas, and VFX paths.
 5. Lock character identity, wardrobe, physical state, relationships, props, environment state, and continuity-critical facts.
 6. Build the beat map. Assign one dominant narrative purpose and viewpoint owner to every beat.
-7. Design playable performance and blocking before camera movement. Preserve contact, weight transfer, reaction order, and cause-and-effect.
-8. Choose framing, camera position, lens family, focus, sensor/lens behavior, movement, movement curve, duration, and transition from the beat's information and spatial needs.
-9. Design action as intention → attack line → response → contact / miss → force transfer → recovery → new tactical state.
-10. Design VFX as photographed physical events. For major impacts, also design time compression/expansion, impact frames, deformation, shockwave, camera response, and recovery.
-11. Define how VFX shares plate depth, occlusion, motion blur, focus, lens distortion, interactive light, atmosphere, grain and temporal response.
-12. Design motivated lighting, atmospheric depth, production sound, dialogue, Foley, VFX sound, editorial rhythm, and final image behavior.
+7. Design playable performance and blocking before camera movement. Preserve contact, weight transfer, reaction order, and cause-and-effect. In 2D/anime action, also protect key-pose readability, silhouette, timing, spacing, deformation and consequence pose.
+8. Choose framing, camera position, lens family or graphic perspective, focus when applicable, movement, movement curve, duration, and transition from the beat's information and spatial needs.
+9. Design action as intention → attack line → response → contact / miss → force transfer → recovery → new tactical state. In 2D/anime combat, translate this into Read Pose → Anticipation → Launch → Burst/Smear → Contact → Consequence Pose → Recovery.
+10. Design VFX or hand-drawn FX as causal events. For major impacts, also design time compression/expansion, impact frames, deformation, shockwave or graphic force lines, camera/graphic response, and recovery.
+11. In photographed or hybrid modes, define how VFX shares plate depth, occlusion, motion blur, focus, lens distortion, interactive light, atmosphere, grain and temporal response. In 2D/anime mode, define line hierarchy, background state, smear, impact tier and FX lifecycle instead.
+12. Design motivated lighting, atmospheric depth, production sound, dialogue, Foley, VFX/FX sound, editorial rhythm, and final image behavior.
 13. Translate the plan into model-appropriate chronological prompts with stable aliases, state anchors, and only failure-specific negatives.
 14. Audit continuity and feasibility. When a generation fails, preserve what works and correct the earliest failing layer plus dependencies.
 15. Record recurring failures and validated reusable lessons; promote only generalizable lessons into reference modules.
@@ -40,7 +40,7 @@ Read only what the current task needs.
 - Reusable dramatic structures for introductions, reveals, confrontations, pursuit, duels, superpower fights and aftermath: [scene-grammar-library.md](references/scene-grammar-library.md)
 - Actor intention, subtext, micro-behavior, relationship performance: [performance-direction.md](references/performance-direction.md)
 - Character, prop, action, lighting, damage, VFX state transitions: [continuity-direction.md](references/continuity-direction.md)
-- Medium and reality-mode switching: [production-modes.md](references/production-modes.md)
+- Medium and reality-mode switching, including routing into 2D/anime combat grammar: [production-modes.md](references/production-modes.md)
 
 ### Camera, optics and shot design
 
@@ -54,6 +54,7 @@ Read only what the current task needs.
 
 - Fight grammar, tactical beats, safety, ability choreography: [action-direction.md](references/action-direction.md)
 - CAVOK conditional fast-cut action signature and spatial safeguards: [cavok-action-signature.md](references/cavok-action-signature.md)
+- Dedicated 2D hand-drawn anime combat grammar: key poses, silhouette, variable timing, smear, speed lines, impact frames, hand-drawn FX, background states, perspective exaggeration, character combat signatures, AI execution and QC: [2d-anime-combat-grammar.md](references/2d-anime-combat-grammar.md)
 - Speed afterimages, temporal echoes, dissolve/reappear, shape language: [action-vfx-grammar.md](references/action-vfx-grammar.md)
 - Physically based supernatural effects and collisions: [cinematic-vfx.md](references/cinematic-vfx.md)
 - Material behavior for ice, fire, electricity, plasma, smoke, water, spatial distortion and reconstruction: [vfx-material-library.md](references/vfx-material-library.md)
@@ -73,6 +74,7 @@ Read only what the current task needs.
 
 - AI prompt budget, aliases, temporal/state anchors and shot splitting: [ai-video-execution.md](references/ai-video-execution.md)
 - Model capability probing and model-specific adaptation: [model-adapters.md](references/model-adapters.md)
+- Seedance 2.5 execution adapter: [seedance-2.5.md](references/seedance-2.5.md)
 - Generated-footage diagnosis and minimum-cost correction: [generation-diagnostics.md](references/generation-diagnostics.md)
 - Character, environment, prop, material and reference-asset governance: [art-assets.md](references/art-assets.md)
 - Editorial structure, pacing, transitions and salvage strategy: [editing-direction.md](references/editing-direction.md)
@@ -91,27 +93,29 @@ Read only what the current task needs.
 
 ## Camera non-negotiables
 
-- Design blocking first. A camera move must clarify information, relationship, geography, emotional pressure, or continuity.
+- Design blocking first. A camera move must clarify information, relationship, geography, emotional pressure, continuity, or—in stylized 2D action—graphic force and pose readability.
 - Choose movement from content rather than keywords. Sadness does not automatically mean push-in; danger does not automatically mean handheld; scale does not automatically mean drone.
-- Write active movement as: Start → Trigger / Motivation → Acceleration → Cruise → Deceleration → Settle → Hold → End.
+- In live-action or grounded 3D, write active movement as: Start → Trigger / Motivation → Acceleration → Cruise → Deceleration → Settle → Hold → End.
 - Let performers trigger the camera where appropriate; do not let the camera predict every reaction.
 - Stillness is an intentional camera behavior. Use Move → Settle → Discover → Hold → React → Move when continuous motion would dilute the beat.
 - In action, preserve attack vectors and geography. A stable wide or medium-wide may carry more force than a moving camera.
 - Use realistic support in live-action mode: Tripod, Dolly, Slider, Steadicam, Handheld, Gimbal, Crane/Jib, Drone, Vehicle Rig, Body Rig.
-- Avoid perpetual floating, automatic orbiting, random zooms, mechanically constant-speed moves, excessive 360-degree movement, meaningless shake, and camera travel through solid objects.
+- In 2D/anime mode, graphic camera and extreme perspective are allowed when they improve pose, vector, rhythm, or impact, but they must return to readable geography after abstraction.
+- Avoid perpetual floating, automatic orbiting, random zooms, mechanically constant-speed moves, excessive 360-degree movement, meaningless shake, and camera travel through solid objects unless a clearly stylized animated rule makes the impossibility readable and purposeful.
 
 ## Optics non-negotiables
 
-- Perspective follows camera position; focal length changes field of view, not physical perspective by itself.
+- Perspective follows camera position; focal length changes field of view, not physical perspective by itself, in photographic modes.
 - Choose depth of field from information needs, not a blanket 'cinematic shallow focus' rule.
 - Focus pulls need a motivated target, realistic speed, possible operator lag, and a stable landing.
 - Shutter/motion blur must match the intended action language and every integrated VFX element.
-- Flare, halation, chromatic effects, distortion and rolling-shutter stress require optical or sensor causes.
+- Flare, halation, chromatic effects, distortion and rolling-shutter stress require optical or sensor causes in photographic modes.
 - Maintain lens/sensor behavior across shots intended to match.
+- In 2D/anime mode, explicit graphic perspective, smear, linework and background abstraction may replace photographic optics during designated beats; restore stable character proportions and spatial orientation afterward.
 
 ## VFX non-negotiables
 
-Treat VFX as photographed abnormal physics, not game-skill decoration.
+In photographic modes, treat VFX as photographed abnormal physics, not game-skill decoration.
 
 Base lifecycle:
 
@@ -128,7 +132,11 @@ Anticipation → Time Compression / Time Expansion → Contact → Impact Frame 
 - Camera shake happens when force reaches the camera, not before.
 - VFX light must be local, directional, exposure-aware, and physically proportional to the source.
 
+In 2D/anime mode, hand-drawn FX may become graphic rather than photoreal, but they must still obey source, vector, timing, contact, hierarchy, breakup and dissipation. FX cannot rescue an unreadable pose or erase the true contact point.
+
 ## Compositing non-negotiables
+
+In live-action and hybrid modes:
 
 - VFX must occupy a defined depth and obey foreground/background occlusion.
 - Match plate focus, bokeh, shutter blur, lens distortion, atmospheric perspective, local exposure, grain and sharpness.
@@ -137,23 +145,28 @@ Anticipation → Time Compression / Time Expansion → Contact → Impact Frame 
 - Effects should not be sharper, cleaner or temporally more stable-looking than the photographed image around them.
 - Audit temporal edge chatter, reflection flicker, matte boiling, distortion instability and grain swimming.
 
+In pure 2D/anime mode, replace this audit with line continuity, color/paint continuity, smear restoration, FX-layer ordering, background-state continuity and stable key-pose identity.
+
 ## Atmosphere non-negotiables
 
-Air is a spatial medium, not decoration. Fine dust or micro-particles remain sparse and become visible mainly in directional or back light. Volumetric haze must be thin enough to preserve faces, architecture, action and material detail. Atmospheric perspective should reduce distant contrast gradually. Avoid snow-like particles, full-screen floating light dots, thick fog, hard-edged god rays, and air effects that overpower the subject.
+In photographic modes, air is a spatial medium, not decoration. Fine dust or micro-particles remain sparse and become visible mainly in directional or back light. Volumetric haze must be thin enough to preserve faces, architecture, action and material detail. Atmospheric perspective should reduce distant contrast gradually. Avoid snow-like particles, full-screen floating light dots, thick fog, hard-edged god rays, and air effects that overpower the subject.
+
+In 2D/anime mode, environmental media may be simplified into designed shapes or lines during action, but their direction must remain consistent with wind, pressure, and force, and they must not become random decorative noise.
 
 ## AI execution rules
 
 - Keep directing intent model-independent until the target model and current capabilities are confirmed.
 - Separate invariants from shot-specific state.
 - Use stable character aliases and approved reference assets.
-- Prefer one major causal change per beat when model complexity is high.
-- Write actions chronologically and observably; separate performer motion from camera motion.
+- Prefer one major causal or graphic escalation per beat when model complexity is high.
+- Write actions chronologically and observably; separate performer motion from camera motion, and in 2D/anime mode also separate background-state changes and FX behavior.
 - End multi-clip parts on stable readable states that can seed the next part.
 - Use negatives only for likely or observed failures; excessive negatives compete with positive instructions.
+- For 2D/anime combat, design with `2d-anime-combat-grammar.md` first. If the generation model is Seedance 2.5, translate the approved design through `seedance-2.5.md` afterward; the model adapter must not rewrite combat causality, key poses, character signatures, or geography.
 
 ## Failure handling
 
-When diagnosing footage, preserve successful layers. Locate the earliest failure among story clarity, geography/POV, identity, blocking, camera/focus/optics, action timing, material/VFX, compositing, lighting, sound, temporal stability, or model limitation. Use the failure library before inventing a new fix. Correct one primary root cause at a time and define a success criterion for the next controlled test.
+When diagnosing footage, preserve successful layers. Locate the earliest failure among story clarity, geography/POV, identity, blocking/pose, camera/focus/graphic perspective, action timing and spacing, material/VFX or hand-drawn FX, compositing/line integration, lighting/color, sound, temporal stability, or model limitation. Use the failure library before inventing a new fix. Correct one primary root cause at a time and define a success criterion for the next controlled test.
 
 ## Regression discipline
 
@@ -175,12 +188,12 @@ Unless the user requests another format, deliver:
 
 1. Directorial intent and assumptions.
 2. Beat map with viewpoint ownership and, when useful, selected Scene Grammar.
-3. Shot table with timecode, framing, camera, optics, blocking, image, sound, and continuity notes.
-4. Character, environment, camera, optics, lighting, atmosphere, VFX and compositing locks.
+3. Shot table with timecode, framing, camera, optics or graphic perspective, blocking/pose, image, sound, and continuity notes.
+4. Character, environment, camera, optics/graphic rules, lighting/color, atmosphere, VFX/FX and compositing/line-integration locks as appropriate to the medium.
 5. One chronological ready-to-use generation prompt or per-part prompts when duration requires splitting.
 6. A targeted negative prompt.
-7. Continuity, physical plausibility, optical integration and generation-feasibility checklist.
+7. Continuity, action readability, physical or graphic plausibility, integration and generation-feasibility checklist.
 
 ## Final principle
 
-Control what the audience sees, knows, anticipates, and feels at each moment. The finished scene should behave like cinema first; AI is only one production method.
+Control what the audience sees, knows, anticipates, and feels at each moment. The finished scene should behave like cinema or deliberate animation first; AI is only one production method.
