@@ -8,13 +8,19 @@
 
 允许强化 Pose、夸张动作、高速摄影机、残影、能量拖尾和设计化灯光，但保持动作、空间和视觉连续性。3D可以借用2D动画的Pose与Timing原则，但不要在未明确要求时自动加入手绘Smear、Impact Frame或背景抽象。
 
+当3D动作目标是“真人摄影感 / 超写实CG / 电影级JRPG动作”时，不要只按一般3D Animation处理；同时加载 [hyperreal-action-direction-v2.md](hyperreal-action-direction-v2.md)，让人物表演、动作编排、三维场面调度和摄影机编舞成为同一个设计系统。
+
 ## Hyperreal Live Action
 
 优先物理、表演、摄影、光线、材质和环境互动可信。真人表演默认克制；真实动作包含准备、重心转移、动作、惯性与恢复。摄影机必须说明 Tripod、Dolly、Steadicam、Handheld、Gimbal、Crane、Drone 等现实承载方式。允许轻微重新构图、跟焦迟滞和操作惯性，禁止随机抖动与幽灵摄影机。
 
+当场景包含战斗、追逐中的攻击、武器交锋、怪物近战或超能力近身冲突时，加载 [hyperreal-action-direction-v2.md](hyperreal-action-direction-v2.md)。核心不是“更多运镜”，而是 Action–Camera Coupling：人物先产生意图和身体张力，摄影机被表演与动作触发；人物改变三维空间，摄影机才改变空间关系。
+
 ## Stylized Live Action
 
 以真实演员和真实摄影逻辑为基础，允许极端色彩、光影、构图和隐喻；基础人体物理仍需可信。除非明确切换到2D/混合动画语言，否则不要用手绘变形帧代替真实受力。
+
+若Stylized Live Action包含高强度动作，可调用 `hyperreal-action-direction-v2.md` 的Action–Camera Coupling、三维场面调度、Camera Flair和Hero Camera Move，但允许比Hyperreal Live Action更激进的虚拟机位，只要触发、力量方向、空间和结果仍然清楚。
 
 ## 2D / Anime
 
@@ -62,5 +68,7 @@
 ## Hybrid CG + Live Action
 
 真人摄影逻辑为底，CG增强世界规模、角色能力、生物、环境和 VFX。CG必须匹配真实光线、材质、镜头与环境反应。
+
+战斗段优先使用 `hyperreal-action-direction-v2.md` 管理表演、动作、三维空间和摄影机；只有明确切换到2D插帧、手绘Impact或漫画式图形段落时，才局部进入 `2d-anime-combat-grammar.md`。
 
 若混合项目明确使用2D动画插帧、手绘FX、Impact Frame或漫画式图形段落，应把这些段落视为独立媒介状态，并明确切入和退出点；不要让真人摄影规则与2D变形规则在同一帧互相冲突。
