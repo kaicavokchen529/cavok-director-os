@@ -8,15 +8,31 @@ AI视频Prompt不是把所有信息都塞进去，而是把最重要、最稳定
 
 按以下优先级组织：
 
-1. Production Mode / Style Lock
-2. Character Identity / Alias
-3. Scene & Environment Lock
-4. Camera Movement & Lens
-5. Blocking / Subject Motion
-6. Lighting & Atmosphere
-7. VFX Lifecycle
-8. Sound / Dialogue Timing
-9. Negative Constraints
+1. User Revision Scope / Approved Locks
+2. Production Mode / Style Lock
+3. Reference Responsibility Contract
+4. Character Identity / Alias
+5. Scene & Environment Lock
+6. Blocking / Subject Motion / Physical State
+7. Camera Movement & Lens
+8. Lighting & Atmosphere
+9. VFX Lifecycle
+10. Sound / Dialogue Timing
+11. Negative Constraints
+
+## Revision Scope Lock
+
+When the user has approved shots, states, or design decisions, treat them as frozen unless the user explicitly reopens them.
+
+```text
+APPROVED LOCK
+Locked:
+Editable:
+Requested change:
+Dependencies allowed to change:
+```
+
+“Only change Shot 05” means other approved shots remain unchanged. Do not improve unrelated composition, dialogue, blocking, VFX, wardrobe, geography, or timing while solving a local request. If the requested fix necessarily affects a dependency, state the dependency and change the minimum required layer.
 
 ## Character Alias
 
@@ -26,10 +42,12 @@ AI视频Prompt不是把所有信息都塞进去，而是把最重要、最稳定
 
 每个Part必须有：
 
-- Start Frame：人物位置、姿态、视线、道具、伤势、VFX状态、光线、摄影机。
+- Start Frame：世界位置、身体体态、朝向、视线、左右手、支撑脚/重心、动量、接触关系、道具、伤势、VFX状态、光线、摄影机。
 - End Frame：同样字段，作为下一Part唯一连续性基准。
 
-角色位置、左右手、服装、武器、伤势和能力状态不得在Part边界无理由变化。
+角色位置、体态、左右手、服装、武器、伤势、接触关系和能力状态不得在Part边界无理由变化。
+
+连续时空中执行 **Visible State Transition Law**：下一Part / 下一镜开头必须继承上一段结尾。若某个高风险状态容易被模型重置，只重复一条短的 **Continuity Risk Anchor**，不要复制整套设定。
 
 ## One Major Change Per Beat
 
@@ -37,11 +55,28 @@ AI视频Prompt不是把所有信息都塞进去，而是把最重要、最稳定
 
 ## Camera Separation
 
-人物动作与摄影机动作分开写。先写Camera，再写Subject。禁止把“角色向前冲，镜头也快速推近并环绕同时变焦”堆在同一句里。
+人物动作与摄影机动作分开写，但按真实因果顺序连接。不要机械规定Camera永远先写；如果人物先触发摄影机，应写“人物启动 → 摄影机晚半拍响应”。禁止把“角色向前冲，镜头也快速推近并环绕同时变焦”堆在同一句里。
+
+## Shot Complexity Budget
+
+复杂生成时，每个Beat / Shot默认控制在：
+
+```text
+1 Narrative Goal
+1 Dominant Character Action
+1 Primary Camera Idea
+0–1 Secondary Camera Adjustment
+1 Performance Change
+1 Major FX / Environment Event
+```
+
+这是执行预算，不是机械配额。若多个重大动作、镜头技巧、表演转折和VFX事件互相竞争，优先拆Beat或利用稳定状态 / 动机遮挡分段，不继续堆Prompt。
 
 ## Prompt Budget
 
 删掉不影响结果的形容词。重复信息只保留一次。优先保留可观察、可执行的名词和动词：位置、方向、距离、速度、光源、材质、接触和时间。
+
+Reference Contract只写当前生成真正需要继承的职责。不要因为上传了一个参考，就让模型同时继承其中的人物、背景、姿态、构图和光线。
 
 ## Negative Constraint Compression
 
@@ -62,7 +97,7 @@ AI视频Prompt不是把所有信息都塞进去，而是把最重要、最稳定
 
 ## Timing
 
-AI视频Part原则上≤15秒。对白必须给时间窗。复杂VFX要为Birth、Peak、Residual留出可读时间。不要在最后0.2秒同时完成多个状态变化。
+Part长度由目标模型能力、动作复杂度和连续性风险决定；模型支持更长时长不代表应该填满时长。对白必须给时间窗。复杂VFX要为Birth、Peak、Residual留出可读时间。不要在最后0.2秒同时完成多个状态变化。复杂段落优先在稳定状态、动机遮挡或明确动作落点处分段。
 
 ## QC
 
