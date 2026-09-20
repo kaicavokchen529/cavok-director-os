@@ -8,13 +8,17 @@
 
 每个场景至少明确：
 
-Source → Direction → Quality → Intensity → Color → Contrast → Exposure → Motivation
+Source → Scene Anchor → Direction → Landing → Falloff / Occlusion → Quality → Intensity → Color → Contrast → Exposure → Motivation
 
-## Source
+## Source / Anchor
 
-来源可以是太阳、天空、窗、 practical、路灯、车灯、屏幕、火焰、霓虹、月光或VFX。禁止无来源轮廓光。
+来源可以是太阳、天空、窗、 practical、路灯、车灯、屏幕、火焰、霓虹、月光或VFX。对主要摄影光必须同时说明它在世界空间中的锚点。固定光源在连续机位中不能为了构图方便自行换边。
 
-## Direction
+禁止无来源轮廓光、无来源眼神光、无来源侧光。看不见灯具并不等于可以没有物理解释；隐藏补光只能表现为现有光源体系的可信反射、漫反射或延伸。
+
+## Direction / Landing / Falloff
+
+每一束承担叙事作用的光，都要能回答：从哪里来、朝哪里走、落在谁/什么表面上、在哪里被遮挡、为什么随距离变弱或变软。
 
 正面光：信息清楚但塑形弱。
 侧光：增强体积、冲突和面部结构。
@@ -56,4 +60,4 @@ Source → Direction → Quality → Intensity → Color → Contrast → Exposu
 
 ## QC
 
-检查：光从哪里来？方向一致吗？人物和背景是否处于同一光环境？肤色是否可信？高光是否过曝？阴影是否有必要信息？VFX是否正确染光？空气介质是否支持而不是吞没主体？
+检查：光源是什么？在场景哪里？方向是什么？落在哪里？如何衰减或被遮挡？方向一致吗？人物和背景是否处于同一光环境？肤色是否可信？高光是否过曝？阴影是否有必要信息？VFX是否正确染光？空气介质是否支持而不是吞没主体？
