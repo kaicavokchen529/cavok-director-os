@@ -41,6 +41,17 @@
 - Recovery Style:
 - Injury Behavior:
 
+## Camera Combat Signature
+
+- Camera Lead / Lag Tendency:
+- Preferred Participation Level:
+- Preferred Lens / Depth Behavior:
+- Allowed Camera Stunts:
+- Impact Camera Behavior:
+- Settle Behavior:
+
+Use this only for characters whose fighting style meaningfully affects camera language. Do not force a camera signature onto non-action characters.
+
 ## Continuity Lock
 
 - Hair State:
