@@ -17,18 +17,19 @@ Story intent → Scene objective → Drama beat → Scene grammar → Character 
 2. Extract dramatic objective, conflict, stakes, reveal, emotional turn, audience information, and scene exit.
 3. Select or adapt a Scene Grammar when the scene matches a reusable dramatic pattern; grammar organizes progression, not fixed shots.
 4. Establish geography before coverage: entrances, eyelines, screen direction, elevation, distance, cover, light sources, destructible areas, and VFX paths.
-5. Lock character identity, wardrobe, physical state, relationships, props, environment state, and continuity-critical facts.
-6. Build the beat map. Assign one dominant narrative purpose and viewpoint owner to every beat.
-7. Design playable performance and blocking before camera movement. Preserve contact, weight transfer, reaction order, and cause-and-effect. In hyperreal combat, treat performance tell, action vector, three-dimensional staging, and camera response as a coupled system. In 2D/anime action, also protect key-pose readability, silhouette, timing, spacing, deformation and consequence pose.
-8. Choose framing, camera position, lens family or graphic perspective, focus when applicable, movement, movement curve, duration, and transition from the beat's information and spatial needs. For hyperreal combat, every conspicuous camera move must have a performer, force, spatial, or information trigger.
-9. Design action as intention → attack line → response → contact / miss → force transfer → recovery → new tactical state. In hyperreal combat, extend this into performance tell → load → 3D action vector → camera trigger → action burst → camera choreography → contact → consequence → settle. In 2D/anime combat, translate it into Read Pose → Anticipation → Launch → Burst/Smear → Contact → Consequence Pose → Recovery.
-10. Design VFX or hand-drawn FX as causal events. For major impacts, also design time compression/expansion, impact frames, deformation, shockwave or graphic force lines, camera/graphic response, and recovery.
-11. In photographed or hybrid modes, define how VFX shares plate depth, occlusion, motion blur, focus, lens distortion, interactive light, atmosphere, grain and temporal response. In 2D/anime mode, define line hierarchy, background state, smear, impact tier and FX lifecycle instead.
-12. Design motivated lighting, atmospheric depth, production sound, dialogue, Foley, VFX/FX sound, editorial rhythm, and final image behavior.
-13. Translate the plan into model-appropriate chronological prompts with stable aliases, state anchors, and only failure-specific negatives.
-14. Audit continuity and feasibility. When a generation fails, preserve what works and correct the earliest failing layer plus dependencies.
-15. Record recurring failures and validated reusable lessons; promote only generalizable lessons into reference modules.
-16. After major Skill changes, run the regression tests and compare against the accepted baseline.
+5. Lock character identity, wardrobe, physical state, relationships, props, environment state, continuity-critical facts, approved decisions, and reference responsibilities.
+6. If the user is revising existing work, define revision scope before redesign: what is locked, what is editable, and what dependencies may change. Preserve approved material outside that scope.
+7. Build the beat map. Assign one dominant narrative purpose and viewpoint owner to every beat.
+8. Design playable performance and blocking before camera movement. Preserve contact, weight transfer, reaction order, and cause-and-effect. In hyperreal combat, treat performance tell, action vector, three-dimensional staging, and camera response as a coupled system. In 2D/anime action, also protect key-pose readability, silhouette, timing, spacing, deformation and consequence pose.
+9. Choose framing, camera position, lens family or graphic perspective, focus when applicable, movement, movement curve, duration, and transition from the beat's information and spatial needs. For hyperreal combat, every conspicuous camera move must have a performer, force, spatial, or information trigger.
+10. Design action as intention → attack line → response → contact / miss → force transfer → recovery → new tactical state. In hyperreal combat, extend this into performance tell → load → 3D action vector → camera trigger → action burst → camera choreography → contact → consequence → settle. In 2D/anime combat, translate it into Read Pose → Anticipation → Launch → Burst/Smear → Contact → Consequence Pose → Recovery.
+11. Design VFX or hand-drawn FX as causal events. For major impacts, also design time compression/expansion, impact frames, deformation, shockwave or graphic force lines, camera/graphic response, and recovery.
+12. In photographed or hybrid modes, define how VFX shares plate depth, occlusion, motion blur, focus, lens distortion, interactive light, atmosphere, grain and temporal response. In 2D/anime mode, define line hierarchy, background state, smear, impact tier and FX lifecycle instead.
+13. Design motivated lighting, atmospheric depth, production sound, dialogue, Foley, VFX/FX sound, editorial rhythm, and final image behavior.
+14. Translate the plan into model-appropriate chronological prompts with stable aliases, state anchors, and only failure-specific negatives.
+15. Audit continuity and feasibility. When a generation fails, preserve what works and correct the earliest failing layer plus dependencies.
+16. Record recurring failures and validated reusable lessons; promote only generalizable lessons into reference modules.
+17. After major Skill changes, run the regression tests and compare against the accepted baseline.
 
 ## Load references on demand
 
@@ -179,8 +180,13 @@ In 2D/anime mode, environmental media may be simplified into designed shapes or 
 
 - Keep directing intent model-independent until the target model and current capabilities are confirmed.
 - Separate invariants from shot-specific state.
+- Treat approved user decisions as locks. A local revision must not silently rewrite unrelated approved shots, blocking, dialogue, geography, wardrobe, VFX, or timing.
+- Give every external reference an explicit responsibility: what to inherit, what not to inherit, and which approved version wins conflicts. Do not let a mood, color, pose, or motion reference silently override identity or geography.
 - Use stable character aliases and approved reference assets.
 - Prefer one major causal or graphic escalation per beat when model complexity is high.
+- Enforce a practical Shot Complexity Budget: one narrative goal, one dominant character action, one primary camera idea, at most one secondary camera adjustment, one performance change, and one major FX/environment event unless the model and shot have been validated for more.
+- In continuous time and space, next-shot start state must inherit previous-shot end state. Body posture, hands, support foot, momentum, restraint/contact, prop ownership, injury, elevation, and VFX state may change only through an observable event.
+- Use short Continuity Risk Anchors only where a model is likely to reset state; do not duplicate the entire global bible at every shot.
 - Write actions chronologically and observably; separate performer motion from camera motion, and explicitly connect them by trigger, lead/lag relationship, movement vector, contact behavior and settle. In 2D/anime mode also separate background-state changes and FX behavior.
 - End multi-clip parts on stable readable states that can seed the next part.
 - Use negatives only for likely or observed failures; excessive negatives compete with positive instructions.
@@ -196,6 +202,16 @@ In hyperreal combat, specifically check for side-scroller syndrome, coverage syn
 ## Regression discipline
 
 After a major rule, routing or department-module change, run the cases in `tests/`. Score with `tests/scorecard.md`. No critical category may fall below 3/5; POV, causal-order and continuity violations are critical failures regardless of average. Do not accept a local improvement that materially regresses unrelated directing layers.
+
+## Revision and execution discipline
+
+- **Approved Lock:** preserve user-approved material outside the explicit revision scope.
+- **Reference Responsibility Contract:** every image, video, keyframe, or asset reference has a bounded job and explicit non-responsibilities.
+- **Physical State Ledger:** track body state, facing, gaze, left/right hands, support/weight, momentum, contact/restraint, injury, props and VFX state across shots.
+- **Visible State Transition Law:** in continuous time/space, cuts do not perform state changes. If a character goes prone→standing, restrained→free, empty-handed→armed, airborne→grounded, or damaged→clean, the transition must be visible or an explicit time/location jump must establish the new state.
+- **Continuity Risk Anchor:** repeat only the high-risk state likely to reset.
+- **Sound Continuity State:** persistent beds and tails continue across contiguous shots, changing only with distance, occlusion, perspective, masking, damage, or an explicit source change.
+- **Shot Complexity Budget:** if a beat exceeds the model's reliable execution budget, split at a stable state, motivated occlusion, or clear causal handoff rather than piling on more instructions.
 
 ## Project workflow
 
@@ -214,11 +230,11 @@ Unless the user requests another format, deliver:
 1. Directorial intent and assumptions.
 2. Beat map with viewpoint ownership and, when useful, selected Scene Grammar.
 3. Shot table with timecode, framing, camera, optics or graphic perspective, blocking/pose, image, sound, and continuity notes.
-4. Character, environment, camera, optics/graphic rules, lighting/color, atmosphere, VFX/FX and compositing/line-integration locks as appropriate to the medium.
+4. Character, environment, camera, optics/graphic rules, lighting/color, atmosphere, VFX/FX and compositing/line-integration locks as appropriate to the medium, plus explicit reference responsibilities when references are used.
 5. For hyperreal combat, include performer-camera trigger/lead-lag logic and the sequence's key Hero Camera Move when relevant.
 6. One chronological ready-to-use generation prompt or per-part prompts when duration requires splitting.
 7. A targeted negative prompt.
-8. Continuity, action readability, physical or graphic plausibility, action-camera coupling, spatial dimensionality, integration and generation-feasibility checklist.
+8. Continuity, action readability, physical or graphic plausibility, action-camera coupling, spatial dimensionality, approved-lock preservation, reference-contract compliance, visible state transitions, sound continuity, integration and generation-feasibility checklist.
 
 ## Final principle
 
