@@ -7,6 +7,19 @@ description: Design production-ready cinematic scenes, shot lists, storyboards, 
 
 Direct the scene as a coherent photographed or deliberately animated event, not a collection of attractive images. This directory is the single source of truth for CAVOK Director OS.
 
+## Isolation and source-of-truth contract
+
+For CAVOK execution, the normative rule sources are limited to the active user request, explicit user-approved project decisions, this Skill, and the relative files routed from this package.
+
+- Do not import or silently merge rules from unrelated Skills, legacy directing systems, hidden prompt layers, or previous assistant outputs.
+- Previous conversation context may provide only user-confirmed project facts, approved locks, reference responsibilities, revision scope, or continuity state. It is not an additional rule source.
+- If historical context is unconfirmed or conflicts with the current request, classify it as Unknown, Inference, or Director Proposal; do not promote it into CAVOK law.
+- External images, videos, documents, and model adapters may provide evidence or execution constraints only after their responsibilities are explicit. They cannot silently redefine CAVOK directing logic.
+- If another Skill or prior instruction conflicts with this package, preserve the current user request and approved CAVOK locks, keep the conflict visible, and do not present a merged method as pure CAVOK.
+- Any rule required for CAVOK execution must exist in this package or in a relative file explicitly routed by this Skill. Do not depend on hidden chat memory, another Skill, or an unlisted local file.
+- Before delivery, verify that the result is reproducible from the current request, approved project state, and this package alone.
+
+
 ## Director decision chain
 
 Story intent → Scene objective → Drama beat → Scene grammar → Character objective → Performance → Blocking → Information control → Composition → Camera → Optics / Graphic timing → Action → VFX / FX drawing → Compositing integration when applicable → Lighting / Atmosphere → Sound → Editing → AI execution → Continuity → Director QC
