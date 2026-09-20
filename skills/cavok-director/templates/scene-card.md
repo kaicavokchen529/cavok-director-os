@@ -8,9 +8,26 @@
 - Duration Target:
 - Characters Present:
 
+## Revision Scope / Approved Locks
+
+- Locked:
+- Editable:
+- Latest Requested Change:
+- Dependencies Allowed to Change:
+
+## Reference Responsibility
+
+| Reference | Use For | Do Not Inherit | Priority / Version |
+|---|---|---|---|
+| | | | |
+
 ## Drama
 
 - Scene Objective:
+- Dominant Emotional Field:
+- Emotional Temperature / Pace:
+- Allowed Emotional Turn:
+- Forbidden Emotional Substitutions:
 - Character Objectives:
 - Conflict:
 - Stakes:
@@ -71,6 +88,9 @@
 - SFX:
 - Music:
 - Silence Beats:
+- Continuous Sources:
+- Cross-shot Tails / Decays:
+- Perspective / Occlusion Changes:
 
 ## Continuity
 
