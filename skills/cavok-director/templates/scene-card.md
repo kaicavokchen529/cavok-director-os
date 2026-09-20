@@ -8,6 +8,17 @@
 - Duration Target:
 - Characters Present:
 
+## Evidence / Readiness
+
+- Readiness Level: R0 / R1 / R2
+- Facts:
+- Observations:
+- Inferences:
+- Director Proposals:
+- Unknowns Affecting Execution:
+- Spatial Previs Required: Yes / No
+- Spatial Base / Floorplan Reference:
+
 ## Revision Scope / Approved Locks
 
 - Locked:
@@ -46,15 +57,21 @@
 
 ## Blocking Map
 
+- World-Space Anchors:
 - Entry Positions:
 - Initial Distances:
 - Facing Directions:
 - Contact Relationships:
 - Power Positions:
 - Exit Positions:
+- Character Routes:
+- Elevation Changes:
+- Primary Axis / Motivated Crossings:
+- Expected Background by Major Camera Position:
 
 ## Camera Plan
 
+- Geometry Locked Before Lens: Yes / No
 - Establishing Strategy:
 - Primary Lens Range:
 - Movement Strategy:
@@ -66,9 +83,12 @@
 ## Lighting / Atmosphere
 
 - Motivated Sources:
-- Direction / Quality:
+- Scene Anchors:
+- Direction / Landing / Falloff:
 - Contrast:
-- Haze / Dust:
+- Dominant Depth Mechanism: Light/Exposure / Atmospheric Perspective / Occlusion-Scale
+- Real Atmospheric Medium:
+- Named Directional Source for Volumetrics:
 - Weather Interaction:
 
 ## Action / VFX
