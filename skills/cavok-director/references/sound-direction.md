@@ -23,6 +23,28 @@ Place sound at physical cause and arrival. Account for visual anticipation, cont
 
 Record or specify addressee, distance, projection, breath support, pace, overlap, interruption, room response, and intelligibility priority. Preserve performance detail; do not over-clean away every breath and mouth sound.
 
+## Sound Continuity State
+
+Treat persistent sound sources as continuity state, not as fresh cues recreated shot by shot.
+
+Track important beds and tails across cuts:
+
+```text
+Source:
+Start:
+Continuous / intermittent:
+Perspective change:
+Occlusion change:
+Tail / decay:
+End:
+```
+
+Rain, wind, crowd beds, engines, alarms, fire, wildlife and machinery continue through contiguous time unless the story removes them. Their level, spectrum and clarity may change with distance, walls, camera/listener position, masking and damage.
+
+Transient sounds can bridge shots when physically justified: a blade ring may decay into the next shot; an explosion may leave a pressure tail or temporary auditory dulling; breathing may intensify over several shots. Do not reset the sound world at every cut.
+
+Music remains conditional on project intent. If the user or production specifies no BGM, preserve only diegetic / subjective sound. If the scene is music-driven, integrate music deliberately rather than treating it as automatic emotional decoration.
+
 ## Dynamic range
 
 Create contrast. Reduce competing ambience before a critical cue, but retain believable room tone. Reserve the loudest moment for the most important event. Avoid constant maximum intensity.
