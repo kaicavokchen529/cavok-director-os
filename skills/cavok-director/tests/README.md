@@ -19,7 +19,7 @@ These tests protect directing quality as the Skill evolves. Run the same briefs 
 
 ## Core tests
 
-01 dialogue; 02 boss reveal; 03 suspense discovery; 04 forest duel; 05 fire-vs-ice; 06 hyper-speed assault; 07 identity continuity; 08 long-take blocking; 09 daylight VFX; 10 aftermath; 11 spatial previs; 12 reference reconstruction/calibration.
+01 dialogue; 02 boss reveal; 03 suspense discovery; 04 forest duel; 05 fire-vs-ice; 06 hyper-speed assault; 07 identity continuity; 08 long-take blocking; 09 daylight VFX; 10 aftermath; 11 spatial previs; 12 reference reconstruction/calibration; 13 skill isolation.
 
 ## Pass rule
 
