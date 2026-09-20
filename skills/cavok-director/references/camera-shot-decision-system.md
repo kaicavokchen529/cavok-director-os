@@ -14,14 +14,16 @@
 
 ## 1. Decision order
 
-Do not begin with a favorite movement or famous shot. Decide in this order:
+Do not begin with a favorite movement or famous shot. If geography is uncertain and materially affects blocking, reverse angles, action, or a Hero Camera Move, resolve world-space structure first through `production-previs-evidence-gates.md`.
+
+Decide in this order:
 
 ```text
 dramatic purpose
 → required audience information
 → viewpoint ownership
 → relationship or power change
-→ geography and action direction
+→ verified world-space geography and action direction
 → emotional distance and rhythm
 → shot size, height, angle, lens, focus, movement, duration, and cut
 ```
@@ -64,6 +66,9 @@ Avoid equating low angle with heroism or high angle with weakness automatically.
 
 ## 4. Action direction and camera position
 
+Camera position is selected inside one persistent world. Reverse angles, inserts, OTS views, and action coverage may change projection, but must not silently move walls, doors, light anchors, characters, or obstacles. For complex spaces, check the camera position against the spatial previs map before finalizing the shot.
+
+
 | Action | Primary readable position | Optional emphasis |
 |---|---|---|
 | Horizontal sweep | lateral medium-wide | low-angle near pass for pressure and weapon silhouette |
@@ -95,6 +100,10 @@ For a high horizontal sweep, use a low angle when the dramatic goal is dominance
 Specify motivation, start cue, acceleration, travel, deceleration, landing, and hold. Stillness is a designed camera behavior.
 
 ## 6. Lens and focus
+
+Solve geometry before lens attribution. First lock crop, subject occupancy, camera height, camera-to-subject distance, subject-to-background distance, horizon, major occlusion and perspective relationship. Then choose the field of view / lens family that supports that geometry.
+
+Do not use a longer or wider lens as the first fix for a camera-position problem.
 
 Use perceptual goals:
 
@@ -162,7 +171,9 @@ Not every scene needs all five as separate shots. A blocking-driven oner may per
 [ ] Shot size preserves required information.
 [ ] Height and angle express the intended relationship without hiding action.
 [ ] Movement begins for a reason and settles.
-[ ] Lens and focus support spatial and emotional distance.
+[ ] World-space geography supports the claimed camera view and background.
+[ ] Reverse angles come from the same world rather than a mirrored reconstruction.
+[ ] Lens and focus support already-resolved spatial and emotional distance.
 [ ] Signature techniques are earned, not decorative.
 [ ] Fast cutting activates only when the beat benefits.
 [ ] Coverage includes consequence and an edit-ready exit.
