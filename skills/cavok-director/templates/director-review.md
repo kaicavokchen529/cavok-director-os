@@ -27,6 +27,17 @@ For each failure:
 - What Was Changed:
 - Did the Fix Work:
 
+## Execution Discipline Check
+
+- Approved locks preserved:
+- Requested revision scope preserved:
+- Reference responsibilities respected:
+- Start state inherited from previous end state:
+- Body / hand / support / contact transitions visible:
+- Prompt complexity within budget:
+- Continuity risk anchors used only where needed:
+- Persistent sound sources remained continuous:
+
 ## New Rule Candidates
 
 - Candidate Rule:
