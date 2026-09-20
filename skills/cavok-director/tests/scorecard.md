@@ -17,7 +17,10 @@ Score 1–5:
 | Lighting/Atmosphere | Are source, exposure and air physically coherent? |
 | Sound | Does sound obey cause, distance, material and dynamics? |
 | Editing | Are cuts/holds motivated by information and rhythm? |
-| Continuity | Do incoming/outgoing states connect? |
-| AI Executability | Is complexity bounded and prompt chronology clear? |
+| Continuity | Do incoming/outgoing states connect, including posture, hands, support, contact, props, injury and momentum? |
+| Revision Scope | Are approved locks preserved outside the requested change? |
+| Reference Contract | Does each reference affect only its assigned responsibilities? |
+| Sound Continuity | Do persistent sources and tails continue coherently across contiguous shots? |
+| AI Executability | Is complexity bounded, prompt chronology clear, and the shot within a realistic execution budget? |
 
 Record: version, date, total, critical failures, regressions, improvements, action.
