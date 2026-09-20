@@ -45,6 +45,8 @@ Story intent → Scene objective → Drama beat → Scene grammar → Character 
 17. Record recurring failures and validated reusable lessons; promote only generalizable lessons into reference modules.
 18. After major Skill changes, run the regression tests and compare against the accepted baseline.
 
+Full contract: [isolation-contract.md](references/isolation-contract.md).
+
 ## Load references on demand
 
 Read only what the current task needs.
