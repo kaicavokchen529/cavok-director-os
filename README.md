@@ -71,3 +71,9 @@ Use $cavok-director to 保留现有构图与表演，只诊断并修正这次冰
 - 光学/合成真实性审核
 - 生成结果导演复盘、Failure Library 与规则沉淀
 - Skill 版本回归测试与质量验证
+
+## Isolation and independence
+
+CAVOK Director OS is a self-contained Skill package. Its normative rules come only from the active user request, approved project decisions, `skills/cavok-director/SKILL.md`, and files routed inside that directory.
+
+Unrelated Skills, legacy workflows, hidden prompt layers, and unconfirmed historical conversation outputs must not be merged into CAVOK. External references and model adapters may affect evidence or execution syntax only when their responsibilities are explicit. See [isolation-contract.md](skills/cavok-director/references/isolation-contract.md) and [Test 13](skills/cavok-director/tests/13_skill-isolation.md).
