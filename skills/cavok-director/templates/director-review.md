@@ -17,6 +17,14 @@
 - Sound / Editing:
 - AI Stability:
 
+## Evidence Boundary
+
+- Evidence actually reviewed:
+- Observed:
+- Inferred causes:
+- Not evaluable from current evidence:
+- Visual execution actually verified: Yes / No
+
 ## What Failed
 
 For each failure:
@@ -37,6 +45,16 @@ For each failure:
 - Prompt complexity within budget:
 - Continuity risk anchors used only where needed:
 - Persistent sound sources remained continuous:
+
+## Matched Dimension Lock
+
+- Already Correct:
+- Current Primary Failure:
+- Likely Cause:
+- Change This:
+- Protect:
+- Success Criterion:
+- Regression after retry:
 
 ## New Rule Candidates
 
