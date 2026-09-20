@@ -2,7 +2,7 @@
 
 ## Diagnose before rewriting
 
-Preserve what works. Compare the result against the intended beat, then locate the first failing layer:
+Preserve what works. Bound diagnosis by actual evidence: use **Observed** for what is visible in the output, **Inferred** for likely causes, and **Not evaluable** when the supplied frame / clip cannot prove the claim. Do not infer camera motion from one still or claim visual success from prompt inspection alone. Compare the result against the intended beat, then locate the first failing layer:
 
 1. story information;
 2. viewpoint and geography;
@@ -20,13 +20,17 @@ Fix the earliest causal failure plus dependent layers. Do not rewrite compositio
 ## Diagnostic record
 
 ```text
+Evidence available:
+Evaluation status: MATCHED / DEVIATION / NOT EVALUABLE
 Expected observable result:
 Observed result:
 First incorrect frame or beat:
-Preserved strengths:
+Already correct / matched dimensions:
 Failure layer:
 Likely cause:
 Evidence:
+Change this cause group:
+Protect these matched dimensions:
 Minimum correction:
 Regenerate, extend, edit, composite, or accept:
 Success criterion for next test:
@@ -44,6 +48,31 @@ Success criterion for next test:
 | Collision becomes generic explosion | physics | describe contact, mutual change, force direction, residue |
 | Face changes mid-shot | identity/temporal | shorten shot, strengthen reference, reduce simultaneous complexity |
 | Light changes globally | lighting | constrain effect light locally and preserve ambient exposure |
+
+## Matched Dimension Lock
+
+Before every controlled retry, write:
+
+```text
+Already Correct:
+Current Primary Failure:
+Likely Cause:
+Change This:
+Protect:
+Success Criterion:
+```
+
+Change one cause group at a time. If the correction improves the target but breaks a protected dimension, record it as a regression rather than a success.
+
+Use this loop:
+
+```text
+Observe → Classify → Select Largest Error → Hypothesize Cause
+→ Change One Cause Group → Protect Matched Dimensions
+→ Regenerate / Re-evaluate → Check Improvement & Regression
+```
+
+If repeated targeted corrections fail, change control method, reduce complexity, split the generation, or move to a more controllable pipeline.
 
 ## Retry ladder
 
