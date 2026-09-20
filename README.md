@@ -13,11 +13,11 @@
 正式包包括：
 
 - `SKILL.md`：总导演工作流、路由、强制规则与交付标准
-- `references/`：导演、摄影、光学、表演、动作、VFX、合成、灯光、空气、声音、剪辑、调色、连续性、AI模型适配、Unreal、制片等专业模块
+- `references/`：导演、摄影、光学、表演、动作、VFX、合成、灯光、空气、声音、剪辑、调色、连续性、AI模型适配、Unreal、制片、Spatial Previs、Evidence Discipline 与 Calibration 等专业模块
 - `scene-grammars/`：角色登场、Boss Reveal、对峙、悬疑发现、追逐、决斗、超能力战、超高速突袭、元素碰撞、余波等场景语法
 - `failures/`：生成失败症状、根因与最小修正库
 - `templates/`：Project / Character / Scene / Continuity / Director Review 持久项目模板
-- `tests/`：固定导演回归测试与评分卡，用于验证 Skill 升级是否真正变强
+- `tests/`：固定导演回归测试与评分卡，用于验证 Skill 升级是否真正变强；当前包含基础导演测试、Spatial Previs 与 Reference Reconstruction / Calibration 专项测试
 - `agents/openai.yaml`：Skill UI 元数据
 
 ## 核心导演逻辑
@@ -32,12 +32,17 @@ VFX按真实事件设计：
 
 > Anticipation → Time Compression / Expansion → Contact → Impact Frame → Compression → Deformation → Energy Release → Secondary Reaction → Inertia → Recovery → Residual
 
-## 本轮新增
+## 当前关键能力
 
 - Scene Grammar Library：让系统知道“这类戏如何发展”，而不是只知道“镜头怎么拍”。
+- Hyperreal Action Direction v2：把人物表演、三维动作调度和摄影机编舞耦合，避免横板格斗、装饰性运镜和机械跟拍。
+- 2D Anime Combat Grammar：独立处理 Key Pose、Silhouette、Variable Timing、Smear、Impact Frame、手绘FX和背景抽象。
 - VFX Compositing & Optical Integration：统一深度、遮挡、互动光、反射折射、运动模糊、焦点、镜头响应、空气与颗粒质感。
-- Camera Optics & Sensor：补齐传感器、焦距/距离、T-stop、焦点、呼吸效应、球面/变形宽银幕、快门、滚动快门、高光、滤镜与眩光。
-- Director Regression Tests：固定 10 个导演测试场景和评分卡，避免升级某一模块却让其他能力退化。
+- Camera Optics & Sensor：补齐传感器、焦距/距离、T-stop、焦点、呼吸效应、球面/变形宽银幕、快门、滚动快门、高光、滤镜与眩光，并执行 Geometry Before Lens。
+- Production / Previs / Evidence Gates：加入 Fact / Observation / Inference / Director Proposal / Unknown、R0/R1/R2 Readiness、Spatial Previs、Light Source Causality、Dominant Depth、Volumetric Double Gate、Evidence Boundary 与 Matched Dimension Calibration。
+- Execution Discipline：加入 Approved Lock、Reference Responsibility Contract、Physical State Ledger、Visible State Transition Law、Continuity Risk Anchor、Sound Continuity 与 Shot Complexity Budget。
+- Director Mechanism Library：导演经验按 Activation → Dramatic Problem → Mechanism → Visible Result → Exit → Anti-Trigger 组织，避免只学表面风格标签。
+- Director Regression Tests：当前基础测试扩展到 12 个场景，并加入 Spatial Previs 与 Reference Reconstruction / Calibration 专项测试。
 
 ## 使用
 
