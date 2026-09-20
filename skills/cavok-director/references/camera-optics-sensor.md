@@ -6,11 +6,29 @@ Camera language is not only focal length. Define the perceptual and physical rec
 
 ## Decision chain
 
-Story need → camera distance/position → field of view → sensor/format behavior → lens family → aperture / depth → focus strategy → shutter / motion → filtration / flare → exposure and highlight response.
+Story need → frame/crop → subject occupancy → camera/subject/background geometry → camera distance/position → horizon/perspective/occlusion → field of view → sensor/format behavior → lens family → aperture/depth → focus strategy → shutter/motion → filtration/flare → exposure and highlight response.
 
 ## Sensor / format
 
 Sensor size changes field of view at a given focal length and influences practical depth-of-field choices. Do not use format as prestige shorthand. Choose it for desired field of view, camera distance, depth, low-light behavior and production constraints.
+
+## Geometry Before Lens
+
+For reference matching or reconstruction, solve in this order:
+
+```text
+Frame / Crop
+→ Subject Position & Occupancy
+→ Camera / Subject / Background Relative Distance
+→ Horizon / Perspective / Occlusion
+→ Field of View / Lens Candidate
+→ Depth of Field
+→ Optical Texture
+```
+
+A single still rarely proves one exact focal length. Treat millimeter values as candidates consistent with the required field of view and production geometry, not as magically recoverable metadata.
+
+When absolute measurements are unavailable, preserve relative relationships: subject size in frame, horizon, foreground overlap, camera height, and near/far scale change.
 
 ## Focal length and distance
 
@@ -66,6 +84,7 @@ Optics and support interact: handheld changes focus stability and parallax; doll
 
 ## Optical continuity checklist
 
+- geometry solved before focal-length correction;
 - camera distance and perspective consistent across intended matches;
 - depth of field preserves required information;
 - focus pulls have motivated targets and realistic timing;
