@@ -10,6 +10,9 @@ These tests protect directing quality as the Skill evolves. Run the same briefs 
 4. Compare against the previous baseline.
 5. A new rule must not improve one department by materially damaging unrelated departments.
 6. Record regressions separately from model-specific generation failures.
+7. For revision tests, verify that unrelated approved shots remain unchanged.
+8. For reference-driven tests, verify that each reference affects only its assigned responsibility.
+9. For continuity-heavy tests, verify visible posture/hand/contact transitions rather than only matching identity and screen direction.
 
 ## Core tests
 
