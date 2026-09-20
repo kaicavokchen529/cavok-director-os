@@ -17,7 +17,7 @@ Story intent → Scene objective → Drama beat → Scene grammar → Character 
 2. Extract dramatic objective, conflict, stakes, reveal, emotional turn, audience information, and scene exit.
 3. Select or adapt a Scene Grammar when the scene matches a reusable dramatic pattern; grammar organizes progression, not fixed shots.
 4. For complex, reference-dependent, spatially uncertain, or long-form work, run the Production / Previs / Evidence gates before detailed shot design: separate Fact / Observation / Inference / Director Proposal / Unknown, choose the appropriate readiness level, and require spatial previs when geography materially affects blocking or camera choreography.
-6. Establish geography before coverage: entrances, eyelines, screen direction, elevation, distance, cover, light sources, destructible areas, and VFX paths.
+5. Establish geography before coverage: entrances, eyelines, screen direction, elevation, distance, cover, light sources, destructible areas, and VFX paths.
 6. Lock character identity, wardrobe, physical state, relationships, props, environment state, continuity-critical facts, approved decisions, and reference responsibilities.
 7. If the user is revising existing work, define revision scope before redesign: what is locked, what is editable, and what dependencies may change. Preserve approved material outside that scope.
 8. Build the beat map. Assign one dominant narrative purpose and viewpoint owner to every beat.
