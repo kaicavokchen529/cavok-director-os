@@ -16,20 +16,21 @@ Story intent → Scene objective → Drama beat → Scene grammar → Character 
 1. Identify medium, reality level, genre, and camera strategy.
 2. Extract dramatic objective, conflict, stakes, reveal, emotional turn, audience information, and scene exit.
 3. Select or adapt a Scene Grammar when the scene matches a reusable dramatic pattern; grammar organizes progression, not fixed shots.
-4. Establish geography before coverage: entrances, eyelines, screen direction, elevation, distance, cover, light sources, destructible areas, and VFX paths.
-5. Lock character identity, wardrobe, physical state, relationships, props, environment state, continuity-critical facts, approved decisions, and reference responsibilities.
-6. If the user is revising existing work, define revision scope before redesign: what is locked, what is editable, and what dependencies may change. Preserve approved material outside that scope.
-7. Build the beat map. Assign one dominant narrative purpose and viewpoint owner to every beat.
-8. Design playable performance and blocking before camera movement. Preserve contact, weight transfer, reaction order, and cause-and-effect. In hyperreal combat, treat performance tell, action vector, three-dimensional staging, and camera response as a coupled system. In 2D/anime action, also protect key-pose readability, silhouette, timing, spacing, deformation and consequence pose.
-9. Choose framing, camera position, lens family or graphic perspective, focus when applicable, movement, movement curve, duration, and transition from the beat's information and spatial needs. For hyperreal combat, every conspicuous camera move must have a performer, force, spatial, or information trigger.
-10. Design action as intention → attack line → response → contact / miss → force transfer → recovery → new tactical state. In hyperreal combat, extend this into performance tell → load → 3D action vector → camera trigger → action burst → camera choreography → contact → consequence → settle. In 2D/anime combat, translate it into Read Pose → Anticipation → Launch → Burst/Smear → Contact → Consequence Pose → Recovery.
-11. Design VFX or hand-drawn FX as causal events. For major impacts, also design time compression/expansion, impact frames, deformation, shockwave or graphic force lines, camera/graphic response, and recovery.
-12. In photographed or hybrid modes, define how VFX shares plate depth, occlusion, motion blur, focus, lens distortion, interactive light, atmosphere, grain and temporal response. In 2D/anime mode, define line hierarchy, background state, smear, impact tier and FX lifecycle instead.
-13. Design motivated lighting, atmospheric depth, production sound, dialogue, Foley, VFX/FX sound, editorial rhythm, and final image behavior.
-14. Translate the plan into model-appropriate chronological prompts with stable aliases, state anchors, and only failure-specific negatives.
-15. Audit continuity and feasibility. When a generation fails, preserve what works and correct the earliest failing layer plus dependencies.
-16. Record recurring failures and validated reusable lessons; promote only generalizable lessons into reference modules.
-17. After major Skill changes, run the regression tests and compare against the accepted baseline.
+4. For complex, reference-dependent, spatially uncertain, or long-form work, run the Production / Previs / Evidence gates before detailed shot design: separate Fact / Observation / Inference / Director Proposal / Unknown, choose the appropriate readiness level, and require spatial previs when geography materially affects blocking or camera choreography.
+6. Establish geography before coverage: entrances, eyelines, screen direction, elevation, distance, cover, light sources, destructible areas, and VFX paths.
+6. Lock character identity, wardrobe, physical state, relationships, props, environment state, continuity-critical facts, approved decisions, and reference responsibilities.
+7. If the user is revising existing work, define revision scope before redesign: what is locked, what is editable, and what dependencies may change. Preserve approved material outside that scope.
+8. Build the beat map. Assign one dominant narrative purpose and viewpoint owner to every beat.
+9. Design playable performance and blocking before camera movement. Preserve contact, weight transfer, reaction order, and cause-and-effect. In hyperreal combat, treat performance tell, action vector, three-dimensional staging, and camera response as a coupled system. In 2D/anime action, also protect key-pose readability, silhouette, timing, spacing, deformation and consequence pose.
+10. Choose framing, camera position, lens family or graphic perspective, focus when applicable, movement, movement curve, duration, and transition from the beat's information and spatial needs. For hyperreal combat, every conspicuous camera move must have a performer, force, spatial, or information trigger.
+11. Design action as intention → attack line → response → contact / miss → force transfer → recovery → new tactical state. In hyperreal combat, extend this into performance tell → load → 3D action vector → camera trigger → action burst → camera choreography → contact → consequence → settle. In 2D/anime combat, translate it into Read Pose → Anticipation → Launch → Burst/Smear → Contact → Consequence Pose → Recovery.
+12. Design VFX or hand-drawn FX as causal events. For major impacts, also design time compression/expansion, impact frames, deformation, shockwave or graphic force lines, camera/graphic response, and recovery.
+13. In photographed or hybrid modes, define how VFX shares plate depth, occlusion, motion blur, focus, lens distortion, interactive light, atmosphere, grain and temporal response. In 2D/anime mode, define line hierarchy, background state, smear, impact tier and FX lifecycle instead.
+14. Design motivated lighting, atmospheric depth, production sound, dialogue, Foley, VFX/FX sound, editorial rhythm, and final image behavior.
+15. Translate the plan into model-appropriate chronological prompts with stable aliases, state anchors, and only failure-specific negatives.
+16. Audit continuity and feasibility. When a generation fails, preserve what works and correct the earliest failing layer plus dependencies.
+17. Record recurring failures and validated reusable lessons; promote only generalizable lessons into reference modules.
+18. After major Skill changes, run the regression tests and compare against the accepted baseline.
 
 ## Load references on demand
 
@@ -42,6 +43,7 @@ Read only what the current task needs.
 - Actor intention, subtext, micro-behavior, relationship performance: [performance-direction.md](references/performance-direction.md)
 - Character, prop, action, lighting, damage, VFX state transitions: [continuity-direction.md](references/continuity-direction.md)
 - Medium and reality-mode switching, including routing into hyperreal and 2D/anime combat grammar: [production-modes.md](references/production-modes.md)
+- Production readiness, evidence-state separation, spatial previs, light/depth gates, geometry-before-lens, evidence boundaries, director mechanism anti-triggers, and matched-dimension calibration: [production-previs-evidence-gates.md](references/production-previs-evidence-gates.md)
 
 ### Camera, optics and shot design
 
@@ -203,6 +205,21 @@ In hyperreal combat, specifically check for side-scroller syndrome, coverage syn
 
 After a major rule, routing or department-module change, run the cases in `tests/`. Score with `tests/scorecard.md`. No critical category may fall below 3/5; POV, causal-order and continuity violations are critical failures regardless of average. Do not accept a local improvement that materially regresses unrelated directing layers.
 
+## Production, previs and evidence discipline
+
+- **Evidence State:** keep Fact, direct Observation, Inference, Director Proposal, and Unknown distinct; never silently promote inference into project truth.
+- **Adaptive Production Readiness:** simple scenes may stay lightweight, but complex geography, repeated reverse coverage, ensemble action, or reference reconstruction must resolve upstream dependencies before detailed camera design.
+- **Spatial Previs:** when geography materially affects action or camera, establish one world-space base before screen-space composition; reverse views belong to the same world and are not mirrored rooms.
+- **Light Source Causality:** important photographic light must identify source, scene anchor, direction, landing, and falloff / occlusion.
+- **Dominant Depth Mechanism:** depth-heavy shots choose one primary cause—light/exposure separation, atmospheric perspective, or occlusion/scale recession—rather than stacking generic cinematic depth effects.
+- **Volumetric Double Gate:** visible beams, fog-lit shafts, or glowing suspended media require both a real medium and a named directional source.
+- **Director Mechanism + Anti-Trigger:** store reusable directing knowledge as activation conditions, dramatic problem, causal mechanism, visible result, exit condition, and surface traits that are insufficient to trigger it.
+- **Geometry Before Lens:** solve crop, subject occupancy, camera/subject/background relationship, perspective and occlusion before using focal length as the corrective lever.
+- **Evidence Boundary:** a still frame cannot prove camera motion, duration, cut timing or full performance arc; visual validation is claimed only after actual output has been inspected.
+- **Matched Dimension Lock:** on retries, identify what already works, isolate the largest current failure, change one cause group, and protect matched dimensions from regression.
+
+Full rules: [production-previs-evidence-gates.md](references/production-previs-evidence-gates.md).
+
 ## Revision and execution discipline
 
 - **Approved Lock:** preserve user-approved material outside the explicit revision scope.
@@ -231,10 +248,10 @@ Unless the user requests another format, deliver:
 2. Beat map with viewpoint ownership and, when useful, selected Scene Grammar.
 3. Shot table with timecode, framing, camera, optics or graphic perspective, blocking/pose, image, sound, and continuity notes.
 4. Character, environment, camera, optics/graphic rules, lighting/color, atmosphere, VFX/FX and compositing/line-integration locks as appropriate to the medium, plus explicit reference responsibilities when references are used.
-5. For hyperreal combat, include performer-camera trigger/lead-lag logic and the sequence's key Hero Camera Move when relevant.
-6. One chronological ready-to-use generation prompt or per-part prompts when duration requires splitting.
-7. A targeted negative prompt.
-8. Continuity, action readability, physical or graphic plausibility, action-camera coupling, spatial dimensionality, approved-lock preservation, reference-contract compliance, visible state transitions, sound continuity, integration and generation-feasibility checklist.
+6. For hyperreal combat, include performer-camera trigger/lead-lag logic and the sequence's key Hero Camera Move when relevant.
+7. One chronological ready-to-use generation prompt or per-part prompts when duration requires splitting.
+8. A targeted negative prompt.
+9. Continuity, action readability, physical or graphic plausibility, action-camera coupling, spatial dimensionality, approved-lock preservation, reference-contract compliance, visible state transitions, sound continuity, integration and generation-feasibility checklist.
 
 ## Final principle
 
