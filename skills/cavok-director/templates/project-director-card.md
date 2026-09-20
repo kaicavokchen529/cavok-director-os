@@ -10,6 +10,16 @@
 - Aspect Ratio:
 - Frame Rate:
 
+## Evidence & Production Governance
+
+- Authoritative Project Facts:
+- Known Inferences:
+- Director Proposals Pending Approval:
+- Critical Unknowns:
+- Default Readiness Level: R0 / R1 / R2
+- Scenes Requiring Spatial Previs:
+- Visual Validation Policy:
+
 ## Director Core
 
 - Dramatic Tone:
@@ -33,6 +43,10 @@
 ## Lighting Bible
 
 - Key Light Logic:
+- Fixed Light Anchors:
+- Light Causality Rule: Source → Anchor → Direction → Landing → Falloff/Occlusion
+- Dominant Depth Preference by Environment:
+- Volumetric Medium Rules:
 - Contrast Range:
 - Skin Exposure Preference:
 - Shadow Color:
@@ -73,6 +87,13 @@
 - Environment Reference Aliases:
 - Prompt Budget Strategy:
 - Highest-risk Failure Modes:
+
+## Director Mechanism Library
+
+- Approved Mechanisms:
+- Activation Conditions:
+- Anti-Triggers:
+- Exit Conditions:
 
 ## Reference Grammar
 
