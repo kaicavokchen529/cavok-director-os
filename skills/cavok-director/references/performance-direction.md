@@ -14,6 +14,22 @@ For each beat define:
 - the trigger that changes tactic;
 - the body action that reveals the change.
 
+## Emotional Field
+
+For a scene, clip, or grouped passage, define one dominant emotional field before directing individual faces and gestures. This prevents performers from drifting into unrelated high-intensity emotions merely because the scene is dramatic.
+
+```text
+Dominant emotional field:
+Temperature / pace:
+Pressure curve:
+Allowed turn:
+Forbidden substitutions:
+```
+
+Example: “restrained vigilance; low-temperature and quiet, gradually tightening; may turn into combat focus near the end; do not substitute panic, shouting, or theatrical retreat.”
+
+The emotional field is not a command for every character to show the same expression. Each character still has an individual objective, tactic, mask, leakage, and reaction order. If the scene contains a genuine emotional reversal, mark the trigger and transition rather than averaging two incompatible emotions across the whole passage.
+
 ## Performance layers
 
 Direct gaze, blink rate, breath, jaw, lips, swallowing, shoulders, hands, spine, pelvis, support foot, interpersonal distance, and vocal effort. Use only the details visible at the chosen framing.
