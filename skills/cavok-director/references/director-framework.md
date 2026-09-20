@@ -16,6 +16,18 @@
 
 Reduce the scene to an operational sentence: **someone wants something, an obstacle changes the situation, and the scene exits on a new state**.
 
+Before turning interpretation into production truth, classify uncertain inputs when they matter:
+
+```text
+Fact → explicitly established project truth
+Observation → directly visible / audible evidence
+Inference → supported but unconfirmed conclusion
+Director Proposal → new solution introduced for production
+Unknown → unresolved or contradictory information
+```
+
+Do not silently promote Inference or Director Proposal into Fact.
+
 Extract:
 
 - objective and obstacle;
@@ -28,7 +40,20 @@ Divide the scene into beats only when intent, information, power, or physical ac
 
 ## 2. Geography and viewpoint
 
-Create a mental overhead map before the shot list. Fix compass-like screen directions, elevations, distances, obstacles, entrances, and escape paths.
+Choose the required production-readiness level before detailed coverage. A simple self-contained beat may use a mental map; repeated reverse coverage, ensemble action, multi-level geography, or complex camera choreography should use explicit spatial previs.
+
+Create a world-space map before the shot list. Fix compass-like directions, elevations, distances, obstacles, entrances, exits, light anchors, destructible zones, and escape paths. Screen-left / screen-right are camera projections, not world coordinates.
+
+For complex scenes, build in this order:
+
+```text
+world-space structure
+→ character blocking
+→ camera / axis overlay
+→ shot design
+```
+
+A reverse angle must come from the same world and must not be treated as a mirrored room.
 
 For every shot, answer:
 
@@ -88,6 +113,12 @@ Use lens language cautiously. Prefer perceptual results—compressed distance, i
 
 Define location as usable production space: floor conditions, structural supports, foreground occluders, vertical layers, weather, atmosphere, and surfaces that can react.
 
+For narratively important photographic light, track a causal chain:
+
+```text
+Source → Scene Anchor → Direction → Landing → Falloff / Occlusion
+```
+
 Motivate light from real sources. Track direction, hardness, color, exposure, shadow movement, reflections, and continuity across cuts. In bright daylight, fire creates local dynamic warmth and heat distortion; it should not turn the entire scene into orange night lighting. Transparent ice reflects sky and surroundings rather than glowing blue by default.
 
 Let the environment participate: branches take weight, leaves move after pressure changes, dust rises after impacts, water condenses on cold surfaces, and moving foliage changes dappled light.
@@ -137,6 +168,19 @@ Order the prompt as the audience experiences the scene:
 Use concrete verbs and visible states. Replace “dramatic confrontation” with the exact gaze, distance, movement, shadow, and sound that create it. Avoid contradictory camera instructions and overloading one time interval with too many actions.
 
 ## 9. Review and iteration
+
+Bound every diagnosis by available evidence. A still can prove composition, pose, visible lighting and perspective cues; it cannot independently prove camera path, speed, duration, cut timing, or the complete action arc. If output has not actually been viewed, do not claim visual validation.
+
+Before a retry, explicitly protect successful dimensions:
+
+```text
+Already correct:
+Primary failure:
+Likely cause:
+Change this:
+Protect:
+Success criterion:
+```
 
 Audit the result in this order:
 
