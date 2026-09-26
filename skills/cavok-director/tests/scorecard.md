@@ -12,6 +12,9 @@ Score 1–5:
 | Performance | Are emotions translated into playable behavior? |
 | Blocking | Do contact, weight and triggers remain causal? |
 | Camera | Are framing/movement motivated and settled? |
+| Camera Language | Does the scene have a coherent viewpoint arc, visual-distance curve, camera temperament, support/optical palette and end-state relationship? |
+| Expressive Range | Were objective, performance-led and expressive candidates considered without forcing gimmicks or reverting silently to safe coverage? |
+| Platform / POV Handoff | Do first-person, aerial, FPV, Steadicam, handheld, body-rig, vehicle, cable or virtual-camera transitions preserve target, direction, speed, space and audience knowledge? |
 | Optics | Was geometry solved before lens attribution, and do depth, focus, motion blur and lens behavior fit the shot? |
 | Action | Are setup, vector, contact, force and recovery readable? |
 | Tactical State | Is each major action legal from distance, balance, support, limb, weapon, injury, momentum and control state? |

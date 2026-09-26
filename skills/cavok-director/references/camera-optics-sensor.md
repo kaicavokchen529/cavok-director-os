@@ -1,5 +1,7 @@
 # Camera Optics & Sensor Behavior
 
+> **Role:** optical execution authority after the scene camera language is selected. Run `cinematography-language-engine.md` first. Keep optical zoom, focus, distortion, shutter, and lens character separate from physical camera travel and support choice.
+
 ## Principle
 
 Camera language is not only focal length. Define the perceptual and physical recording behavior that explains depth, motion, focus, highlights and imperfections.

@@ -31,13 +31,23 @@
 
 ## Camera Bible
 
+- Viewpoint Baseline:
+- Allowed Viewpoint Regimes:
+- Camera Temperament:
+- Expression Permission: L0 / L1 / L2 / L3
+- Visual-distance Philosophy:
 - Primary Sensor Feel:
 - Preferred Lens Range:
+- Optical Technique Palette:
 - Default Camera Height:
-- Support Priority:
+- Support / Operating Palette:
+- Aerial / FPV / Cable / Vehicle / Body-Rig Policy:
+- First-person / Semi-subjective Policy:
 - Movement Philosophy:
 - Handheld Level:
 - Long Take Policy:
+- Special-technique Activation Conditions:
+- Repeated Defaults to Avoid:
 - Forbidden Camera Behaviors:
 
 ## Lighting Bible

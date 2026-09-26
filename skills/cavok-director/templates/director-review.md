@@ -17,6 +17,18 @@
 - Sound / Editing:
 - AI Stability:
 
+## Cinematography Language Review
+
+- Viewpoint baseline and arc held:
+- Visual-distance curve served the scene:
+- Support showed visible operating character:
+- Optics and physical movement remained distinct:
+- Expressive candidate was considered:
+- Special technique was earned and legible:
+- Aerial / FPV / first-person / platform handoffs preserved state:
+- Repeated safe defaults or gimmicks:
+- Start and end compositions landed as designed:
+
 ## Evidence Boundary
 
 - Evidence actually reviewed:

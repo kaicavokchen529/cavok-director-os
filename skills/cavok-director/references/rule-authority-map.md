@@ -25,7 +25,8 @@ When two domain authorities overlap, preserve both responsibilities and resolve 
 | Hyperreal performer-camera coupling and 3D action staging | `hyperreal-action-direction-v2.md` | shot design, AI execution |
 | 2D/anime pose, timing, spacing, deformation and FX grammar | `2d-anime-combat-grammar.md` | shot design, model adapter |
 | Cross-shot body, prop, damage, momentum and environment state | `continuity-direction.md` | templates, AI execution |
-| Shot, position, lens-family and movement decisions | `camera-shot-decision-system.md` | optics, movement grammar |
+| Scene camera language, viewpoint arc, visual-distance curve, support/optical palette, expressive candidates and platform handoffs | `cinematography-language-engine.md` | shot, movement, optics, medium and model modules |
+| Shot framing and world-space camera position | `camera-shot-decision-system.md` | optics, movement grammar |
 | Camera movement curves and support behavior | `camera-movement-grammar.md` | hyperreal action, shot plans |
 | Optical and sensor behavior | `camera-optics-sensor.md` | compositing, AI prompts |
 | VFX causality and supernatural collisions | `cinematic-vfx.md` | material, timing and compositing modules |

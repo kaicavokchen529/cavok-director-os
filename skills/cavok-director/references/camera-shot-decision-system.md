@@ -1,5 +1,7 @@
 # Camera and Shot Decision System
 
+> **Role:** framing and camera-position execution reference. Run [cinematography-language-engine.md](cinematography-language-engine.md) first for scene-level viewpoint, visual-distance arc, support/optical palette, expressive candidates, and platform handoffs. This file must not independently replace that strategy with a favorite shot or movement.
+
 ## Contents
 
 1. Decision order
@@ -14,7 +16,7 @@
 
 ## 1. Decision order
 
-Do not begin with a favorite movement or famous shot. If geography is uncertain and materially affects blocking, reverse angles, action, or a Hero Camera Move, resolve world-space structure first through `production-previs-evidence-gates.md`.
+Do not begin with a favorite movement or famous shot. Start from the approved Camera Language Brief. If geography is uncertain and materially affects blocking, reverse angles, action, or a Hero Camera Move, resolve world-space structure first through `production-previs-evidence-gates.md`.
 
 Decide in this order:
 

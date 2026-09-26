@@ -5,6 +5,7 @@
 ## Failure Categories
 
 - camera-drift.md：无目的漂移、机械推拉、停不住。
+- camera-language-safe-default.md：镜头长期退回安全第三人称、常规景别与通用跟拍，表达型视点、平台和光学手法不进入候选。
 - character-identity-drift.md：脸、发型、服装、身高比例变化。
 - blocking-collapse.md：人物站位、接触关系、左右位置或重心崩坏。
 - action-weightless.md：动作无准备、无受力、滑步、漂浮。

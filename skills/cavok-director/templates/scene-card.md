@@ -72,9 +72,22 @@
 ## Camera Plan
 
 - Geometry Locked Before Lens: Yes / No
+- Audience Relationship:
+- Viewpoint Baseline:
+- Viewpoint Arc:
+- Camera Temperament:
+- Expression Permission: L0 / L1 / L2 / L3
+- Visual-distance Curve:
 - Establishing Strategy:
 - Primary Lens Range:
-- Movement Strategy:
+- Support / Operating Palette:
+- Optical Palette:
+- Movement Topology:
+- Expressive Candidate Considered:
+- Special-technique Opportunity:
+- Hero Camera Event:
+- Viewpoint / Platform Handoffs:
+- Repeated Defaults to Avoid:
 - Key POVs:
 - Reveal Shot:
 - Reaction Shot:

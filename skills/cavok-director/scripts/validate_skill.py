@@ -110,6 +110,7 @@ def check_required_routes(errors: list[str]) -> None:
     action_text = (ROOT / "references" / "action-direction.md").read_text(encoding="utf-8")
     required = (
         "references/combat-decision-engine.md",
+        "references/cinematography-language-engine.md",
         "references/rule-authority-map.md",
         "references/isolation-contract.md",
     )
