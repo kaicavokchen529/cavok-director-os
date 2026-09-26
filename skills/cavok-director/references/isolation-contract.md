@@ -38,6 +38,19 @@ Never silently combine two directing systems and present the result as pure CAVO
 
 External images, videos, prompts, documents, and model adapters may provide evidence or execution constraints, but each must have an explicit responsibility. A reference may not silently become a source of CAVOK directing rules.
 
+## Clean-room improvement protocol
+
+External Skills and legacy systems may be audited for general design ideas only. Before a mechanism enters CAVOK:
+
+1. describe the production problem in CAVOK terms;
+2. verify that the mechanism does not already exist in this package;
+3. extract the smallest general principle, not the source wording, characters, examples, fixed combinations, project facts, or universal numerical quotas;
+4. rewrite the principle independently and assign one CAVOK authority file;
+5. route it explicitly from `SKILL.md` and replace competing definitions with pointers;
+6. add a regression case and run package validation.
+
+An audited source never becomes a runtime dependency. CAVOK must remain executable when that source is absent.
+
 ## Completeness rule
 
 Any rule required for CAVOK execution must live in this package or in a relative file explicitly routed by `SKILL.md`. Do not depend on hidden chat memory, another Skill, an unlisted local file, or an undocumented legacy system.
@@ -51,4 +64,5 @@ Before delivery, check:
 - [ ] No unconfirmed project inference was promoted to fact.
 - [ ] Every loaded CAVOK reference belongs to this package.
 - [ ] Any external model adapter changed execution syntax only, not directing logic.
+- [ ] Any externally inspired mechanism was independently rewritten, assigned one authority, and regression-tested.
 - [ ] The result can be reproduced from the current request, approved project state, and this package alone.

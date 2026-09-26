@@ -17,7 +17,8 @@
 - `scene-grammars/`：角色登场、Boss Reveal、对峙、悬疑发现、追逐、决斗、超能力战、超高速突袭、元素碰撞、余波等场景语法
 - `failures/`：生成失败症状、根因与最小修正库
 - `templates/`：Project / Character / Scene / Continuity / Director Review 持久项目模板
-- `tests/`：固定导演回归测试与评分卡，用于验证 Skill 升级是否真正变强；当前包含基础导演测试、Spatial Previs 与 Reference Reconstruction / Calibration 专项测试
+- `scripts/`：包结构、内部引用、隔离标记与重复内容的确定性校验
+- `tests/`：15 项固定导演回归测试与评分卡，包含 Spatial Previs、Reference Reconstruction / Calibration、Skill Isolation、Adaptive Duel 与 Package Integrity 专项测试
 - `agents/openai.yaml`：Skill UI 元数据
 
 ## 核心导演逻辑
@@ -35,6 +36,7 @@ VFX按真实事件设计：
 ## 当前关键能力
 
 - Scene Grammar Library：让系统知道“这类戏如何发展”，而不是只知道“镜头怎么拍”。
+- Combat Decision Engine：通过能力边界、战术状态、合法动作选择、证据驱动的对手适应、主动权转移和动作价值门，防止固定连招、无意义动作与沙袋式对手。
 - Hyperreal Action Direction v2：把人物表演、三维动作调度和摄影机编舞耦合，避免横板格斗、装饰性运镜和机械跟拍。
 - 2D Anime Combat Grammar：独立处理 Key Pose、Silhouette、Variable Timing、Smear、Impact Frame、手绘FX和背景抽象。
 - VFX Compositing & Optical Integration：统一深度、遮挡、互动光、反射折射、运动模糊、焦点、镜头响应、空气与颗粒质感。
@@ -42,7 +44,8 @@ VFX按真实事件设计：
 - Production / Previs / Evidence Gates：加入 Fact / Observation / Inference / Director Proposal / Unknown、R0/R1/R2 Readiness、Spatial Previs、Light Source Causality、Dominant Depth、Volumetric Double Gate、Evidence Boundary 与 Matched Dimension Calibration。
 - Execution Discipline：加入 Approved Lock、Reference Responsibility Contract、Physical State Ledger、Visible State Transition Law、Continuity Risk Anchor、Sound Continuity 与 Shot Complexity Budget。
 - Director Mechanism Library：导演经验按 Activation → Dramatic Problem → Mechanism → Visible Result → Exit → Anti-Trigger 组织，避免只学表面风格标签。
-- Director Regression Tests：当前基础测试扩展到 12 个场景，并加入 Spatial Previs 与 Reference Reconstruction / Calibration 专项测试。
+- Rule Authority Map：同一概念只保留一个规范定义，其他模块仅路由或执行，避免规则复述和版本漂移。
+- Director Regression Tests：当前扩展到 15 项，并加入战术适应、Skill 隔离和包完整性验证。
 
 ## 使用
 
@@ -76,4 +79,4 @@ Use $cavok-director to 保留现有构图与表演，只诊断并修正这次冰
 
 CAVOK Director OS is a self-contained Skill package. Its normative rules come only from the active user request, approved project decisions, `skills/cavok-director/SKILL.md`, and files routed inside that directory.
 
-Unrelated Skills, legacy workflows, hidden prompt layers, and unconfirmed historical conversation outputs must not be merged into CAVOK. External references and model adapters may affect evidence or execution syntax only when their responsibilities are explicit. See [isolation-contract.md](skills/cavok-director/references/isolation-contract.md) and [Test 13](skills/cavok-director/tests/13_skill-isolation.md).
+Unrelated Skills, legacy workflows, hidden prompt layers, and unconfirmed historical conversation outputs must not be merged into CAVOK. External references and model adapters may affect evidence or execution syntax only when their responsibilities are explicit. General ideas learned from an external system must be independently rewritten, assigned one CAVOK authority, regression-tested, and remain executable without the source. See [isolation-contract.md](skills/cavok-director/references/isolation-contract.md), [Test 13](skills/cavok-director/tests/13_skill-isolation.md), and [Test 15](skills/cavok-director/tests/15_package-integrity.md).

@@ -34,9 +34,9 @@ Story intent → Scene objective → Drama beat → Scene grammar → Character 
 6. Lock character identity, wardrobe, physical state, relationships, props, environment state, continuity-critical facts, approved decisions, and reference responsibilities.
 7. If the user is revising existing work, define revision scope before redesign: what is locked, what is editable, and what dependencies may change. Preserve approved material outside that scope.
 8. Build the beat map. Assign one dominant narrative purpose and viewpoint owner to every beat.
-9. Design playable performance and blocking before camera movement. Preserve contact, weight transfer, reaction order, and cause-and-effect. In hyperreal combat, treat performance tell, action vector, three-dimensional staging, and camera response as a coupled system. In 2D/anime action, also protect key-pose readability, silhouette, timing, spacing, deformation and consequence pose.
+9. Design playable performance and blocking before camera movement. Preserve contact, weight transfer, reaction order, and cause-and-effect. For combat, bind capabilities without fixing combinations, maintain a tactical state packet, give the opponent evidence-driven agency, and reject actions that do not change physical, tactical, informational, or dramatic state. In hyperreal combat, treat performance tell, action vector, three-dimensional staging, and camera response as a coupled system. In 2D/anime action, also protect key-pose readability, silhouette, timing, spacing, deformation and consequence pose.
 10. Choose framing, camera position, lens family or graphic perspective, focus when applicable, movement, movement curve, duration, and transition from the beat's information and spatial needs. For hyperreal combat, every conspicuous camera move must have a performer, force, spatial, or information trigger.
-11. Design action as intention → attack line → response → contact / miss → force transfer → recovery → new tactical state. In hyperreal combat, extend this into performance tell → load → 3D action vector → camera trigger → action burst → camera choreography → contact → consequence → settle. In 2D/anime combat, translate it into Read Pose → Anticipation → Launch → Burst/Smear → Contact → Consequence Pose → Recovery.
+11. Design action as before state → intention and visible tell → legal action and response → contact / miss / control → force or information transfer → consequence → recovery → after state. For combat, let observed evidence drive adaptation and visible causes drive initiative transfer. In hyperreal combat, extend this into performance tell → load → 3D action vector → camera trigger → action burst → camera choreography → contact → consequence → settle. In 2D/anime combat, translate it into Read Pose → Anticipation → Launch → Burst/Smear → Contact → Consequence Pose → Recovery.
 12. Design VFX or hand-drawn FX as causal events. For major impacts, also design time compression/expansion, impact frames, deformation, shockwave or graphic force lines, camera/graphic response, and recovery.
 13. In photographed or hybrid modes, define how VFX shares plate depth, occlusion, motion blur, focus, lens distortion, interactive light, atmosphere, grain and temporal response. In 2D/anime mode, define line hierarchy, background state, smear, impact tier and FX lifecycle instead.
 14. Design motivated lighting, atmospheric depth, production sound, dialogue, Foley, VFX/FX sound, editorial rhythm, and final image behavior.
@@ -46,6 +46,8 @@ Story intent → Scene objective → Drama beat → Scene grammar → Character 
 18. After major Skill changes, run the regression tests and compare against the accepted baseline.
 
 Full contract: [isolation-contract.md](references/isolation-contract.md).
+
+When responsibilities overlap, resolve them through [rule-authority-map.md](references/rule-authority-map.md). Do not maintain competing copies of the same normative rule.
 
 ## Load references on demand
 
@@ -71,6 +73,7 @@ Read only what the current task needs.
 
 ### Action and VFX
 
+- Tactical combat legality, capability boundaries, state packets, opponent adaptation, initiative transfer, action-value gating, and observable after-states: [combat-decision-engine.md](references/combat-decision-engine.md)
 - Fight grammar, tactical beats, safety, ability choreography, and routing into hyperreal action-camera coupling: [action-direction.md](references/action-direction.md)
 - CAVOK conditional fast-cut action signature and spatial safeguards: [cavok-action-signature.md](references/cavok-action-signature.md)
 - Dedicated 2D hand-drawn anime combat grammar: key poses, silhouette, variable timing, smear, speed lines, impact frames, hand-drawn FX, background states, perspective exaggeration, character combat signatures, AI execution and QC: [2d-anime-combat-grammar.md](references/2d-anime-combat-grammar.md)
@@ -102,6 +105,7 @@ Read only what the current task needs.
 - Persistent working cards: [templates/](templates/)
 - Known recurring generation failures: [failures/README.md](failures/README.md)
 - Director regression suite and scorecard: [tests/README.md](tests/README.md)
+- Package structure, links, isolation markers, duplicate Markdown, and required authority routes: run `scripts/validate_skill.py`
 
 ## Scene Grammar rules
 
@@ -131,6 +135,7 @@ Read only what the current task needs.
 
 When directing live-action-feeling or hyperreal CG combat, load `hyperreal-action-direction-v2.md`.
 
+- Run `combat-decision-engine.md` first to establish legal actions, tactical state, opponent agency, and initiative transfer. The camera module may interpret this chain but may not invent missing combat causality.
 - Camera does not decorate action; it inherits tension from performance, is triggered by action, and resolves with consequence.
 - Design performer motion and camera motion as two coupled chains, not independent layers.
 - Use three-dimensional staging: lateral, depth, vertical, and camera vector.
@@ -218,7 +223,7 @@ In hyperreal combat, specifically check for side-scroller syndrome, coverage syn
 
 ## Regression discipline
 
-After a major rule, routing or department-module change, run the cases in `tests/`. Score with `tests/scorecard.md`. No critical category may fall below 3/5; POV, causal-order and continuity violations are critical failures regardless of average. Do not accept a local improvement that materially regresses unrelated directing layers.
+After a major rule, routing or department-module change, run `scripts/validate_skill.py`, then run the cases in `tests/`. Score with `tests/scorecard.md`. No critical category may fall below 3/5; POV, causal-order, combat-state legality and continuity violations are critical failures regardless of average. Do not accept a local improvement that materially regresses unrelated directing layers.
 
 ## Production, previs and evidence discipline
 
@@ -263,6 +268,7 @@ Unless the user requests another format, deliver:
 2. Beat map with viewpoint ownership and, when useful, selected Scene Grammar.
 3. Shot table with timecode, framing, camera, optics or graphic perspective, blocking/pose, image, sound, and continuity notes.
 4. Character, environment, camera, optics/graphic rules, lighting/color, atmosphere, VFX/FX and compositing/line-integration locks as appropriate to the medium, plus explicit reference responsibilities when references are used.
+5. For combat, reflect capability boundaries, opponent agency, initiative causes, and changed after-states in the action design; keep the full tactical state packet internal unless requested.
 6. For hyperreal combat, include performer-camera trigger/lead-lag logic and the sequence's key Hero Camera Move when relevant.
 7. One chronological ready-to-use generation prompt or per-part prompts when duration requires splitting.
 8. A targeted negative prompt.

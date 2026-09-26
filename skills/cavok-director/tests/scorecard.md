@@ -14,6 +14,9 @@ Score 1–5:
 | Camera | Are framing/movement motivated and settled? |
 | Optics | Was geometry solved before lens attribution, and do depth, focus, motion blur and lens behavior fit the shot? |
 | Action | Are setup, vector, contact, force and recovery readable? |
+| Tactical State | Is each major action legal from distance, balance, support, limb, weapon, injury, momentum and control state? |
+| Opponent Agency | Do both sides pursue objectives, observe evidence, adapt credibly and cause visible initiative transfers? |
+| Action Value | Does each retained action change physical, tactical, informational, relational or dramatic state? |
 | VFX | Are source, material, interaction, timing and residue complete? |
 | Compositing | Would VFX share plate depth, light, blur, optics and texture? |
 | Lighting/Atmosphere | Are source, anchor, direction, landing, exposure and atmosphere physically coherent? |

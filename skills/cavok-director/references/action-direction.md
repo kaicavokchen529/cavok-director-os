@@ -2,7 +2,7 @@
 
 ## Build combat from intention
 
-Give every exchange an objective, attack line, counter, consequence, and new tactical state. Remove moves that neither reveal character nor change advantage, geography, damage, resources, or decision.
+Give every exchange an objective, attack line, counter, consequence, and new tactical state. Use [combat-decision-engine.md](combat-decision-engine.md) as the single authority for capability binding, tactical state packets, legal action selection, opponent adaptation, initiative transfer, and the action-value gate.
 
 For live-action-feeling or hyperreal CG combat, do not treat choreography and camera as separate departments. Load [hyperreal-action-direction-v2.md](hyperreal-action-direction-v2.md) when the fight must feel dimensional, cinematic, performative, and deliberately photographed rather than like flat side-view coverage.
 
@@ -15,6 +15,8 @@ Define:
 - weapon handling, ability source, preparation, recoil, recovery, and failure mode;
 - rules for teamwork, friendly-fire clearance, and communication;
 - for major fighters, a camera-combat signature: camera lead/lag tendency, preferred depth behavior, impact behavior, and allowed hero camera moves.
+
+These bindings constrain legal choices; they do not prescribe a fixed combination, universal counter, or predetermined ending.
 
 ## Choreography beat
 
@@ -32,6 +34,8 @@ New tactical state:
 ```
 
 Protect silhouettes, eyelines, screen direction, support feet, inertia, weapon paths, and partner clearance. Show setup before payoff. Use slow motion only to reveal otherwise unreadable causality or emotion.
+
+Run the tactical packet and action-value gate internally before designing coverage. Do not expose the full internal state table unless the user requests it.
 
 ## Hyperreal action-camera beat
 

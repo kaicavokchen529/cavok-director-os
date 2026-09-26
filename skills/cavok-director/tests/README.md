@@ -16,11 +16,13 @@ These tests protect directing quality as the Skill evolves. Run the same briefs 
 10. For spatially complex tests, verify world-space consistency before evaluating lens or coverage.
 11. For reference reconstruction, separate observed evidence from inference and new director design.
 12. For calibration tests, lock already-correct dimensions before changing the failing layer.
+13. For combat tests, verify capability legality, opponent agency, evidence-driven adaptation, initiative cause, action value, and observable after-states before evaluating camera flair.
+14. After package edits, run `scripts/validate_skill.py` before qualitative regression scoring.
 
 ## Core tests
 
-01 dialogue; 02 boss reveal; 03 suspense discovery; 04 forest duel; 05 fire-vs-ice; 06 hyper-speed assault; 07 identity continuity; 08 long-take blocking; 09 daylight VFX; 10 aftermath; 11 spatial previs; 12 reference reconstruction/calibration; 13 skill isolation.
+01 dialogue; 02 boss reveal; 03 suspense discovery; 04 forest duel; 05 fire-vs-ice; 06 hyper-speed assault; 07 identity continuity; 08 long-take blocking; 09 daylight VFX; 10 aftermath; 11 spatial previs; 12 reference reconstruction/calibration; 13 skill isolation; 14 adaptive duel; 15 package integrity.
 
 ## Pass rule
 
-No critical category may score below 3/5. Overall average target ≥4/5 for director-plan output. Any POV, causal-order or continuity violation is a critical failure regardless of average.
+No critical category may score below 3/5. Overall average target ≥4/5 for director-plan output. Any POV, causal-order, combat-state legality or continuity violation is a critical failure regardless of average. Package validation must return zero.
