@@ -10,6 +10,7 @@
 - character-identity-drift.md：脸、发型、服装、身高比例变化。
 - blocking-collapse.md：人物站位、接触关系、左右位置或重心崩坏。
 - action-weightless.md：动作无准备、无受力、滑步、漂浮。
+- action-vfx-camera-template-lock.md：某类动作被机械绑定到固定特效、固定运镜和固定景别，导致动作机制被遮挡、镜头套路重复。
 - vfx-cheap-cgi.md：塑料材质、霓虹发光、游戏技能感。
 - over-glow-particle-spam.md：Aura过强、粒子满屏、主体被吞没。
 - environment-mutation.md：树木、建筑、天气、光源随机变化。

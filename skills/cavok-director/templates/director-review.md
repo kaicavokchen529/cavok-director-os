@@ -32,6 +32,18 @@
 - Repeated safe defaults or gimmicks:
 - Start and end compositions landed as designed:
 
+## Action–VFX–Camera Review
+
+- Action was legal before visual amplification:
+- Action phase and force vector remained readable:
+- VFX performed a defined function rather than decorating the move:
+- Shot function and required information determined shot size:
+- Support feet / grips / weapon paths / clearance / contact / landing remained visible where causal:
+- Camera relation clarified rather than contradicted action direction:
+- Contact survived particles / glow / blur / shake / time treatment:
+- Consequence, residual and changed after-state were shown:
+- Recent action–VFX–camera combinations did not repeat automatically:
+
 ## Evidence Boundary
 
 - Evidence actually reviewed:

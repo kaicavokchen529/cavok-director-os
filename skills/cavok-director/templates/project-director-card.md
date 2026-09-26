@@ -85,6 +85,18 @@
 - Environmental Interaction:
 - Forbidden VFX Behaviors:
 
+## Action–VFX–Camera Coupling
+
+- Action Readability Priority:
+- VFX Amplification Policy:
+- Contact Visibility Policy:
+- Required Body / Support Coverage:
+- Camera–Action Vector Philosophy:
+- Shot-size Selection Principle:
+- Temporal Emphasis Policy:
+- Character Action–Camera Signatures:
+- Forbidden Automatic Pairings:
+
 ## Sound Bible
 
 - Ambience Philosophy:

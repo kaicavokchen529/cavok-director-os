@@ -22,6 +22,7 @@ When two domain authorities overlap, preserve both responsibilities and resolve 
 | Evidence states, readiness, spatial previs, calibration | `production-previs-evidence-gates.md` | all departments |
 | Medium and reality-mode routing | `production-modes.md` | hyperreal and 2D action modules |
 | Tactical combat legality, fighter state, adaptation, action value | `combat-decision-engine.md` | action, camera, continuity, AI adapters |
+| Beat-level coupling of approved action phase/vector with VFX function, shot function/size, camera relation, time treatment, contact and consequence | `action-vfx-camera-orchestration.md` | action, camera, VFX, shot plans and AI execution |
 | Hyperreal performer-camera coupling and 3D action staging | `hyperreal-action-direction-v2.md` | shot design, AI execution |
 | 2D/anime pose, timing, spacing, deformation and FX grammar | `2d-anime-combat-grammar.md` | shot design, model adapter |
 | Cross-shot body, prop, damage, momentum and environment state | `continuity-direction.md` | templates, AI execution |

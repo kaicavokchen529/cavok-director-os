@@ -1,6 +1,6 @@
 # Shot-to-Camera Movement Decision Matrix
 
-> **使用方式：**这是候选查表，不是“景别或情绪 → 固定运镜”的映射器。先运行 `cinematography-language-engine.md`，再用本表扩充候选；最终选择必须结合视点、场景摄影性格、空间、表演、前后镜头和反刻板检查。
+> **使用方式：**这是候选查表，不是“景别或情绪 → 固定运镜”的映射器。先运行 `cinematography-language-engine.md`，再用本表扩充候选；涉及动作/VFX时同时运行 `action-vfx-camera-orchestration.md`，由动作阶段、力量向量、VFX功能和可读信息决定最终组合。
 
 ## 核心原则
 

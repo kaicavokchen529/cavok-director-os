@@ -110,12 +110,25 @@
 ## Action / VFX
 
 - Action Geography:
+- Dramatic / Tactical Purpose:
+- Before State / Legal Action:
+- Action Family / Phase / 3D Vector:
+- Contact Class:
+- Required Audience Information:
+- VFX Function / Source / Intensity:
+- Shot Function / Shot Size:
+- Camera–Action Vector Relationship:
+- Support / Optics / Movement Curve:
+- Temporal Treatment:
 - Ability Source:
 - Formation:
 - Material:
 - Contact:
 - Secondary Effects:
 - Dissipation:
+- Consequence / Residual / After State:
+- Candidate Bundle Selected: Clarity / Force-Performance / Expressive / Hybrid
+- Segmentation Boundary if Needed:
 
 ## Sound
 

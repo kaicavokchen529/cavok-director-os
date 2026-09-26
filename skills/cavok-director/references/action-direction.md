@@ -1,5 +1,7 @@
 # Action Direction
 
+> **Role:** define intention, legal body/weapon mechanics, choreography beats, three-dimensional force, contact and recovery. After legality and scene camera language are established, use [action-vfx-camera-orchestration.md](action-vfx-camera-orchestration.md) to couple the approved action with VFX function, camera relation, shot function and shot size. This file must not prescribe one fixed visual package per move.
+
 ## Build combat from intention
 
 Give every exchange an objective, attack line, counter, consequence, and new tactical state. Use [combat-decision-engine.md](combat-decision-engine.md) as the single authority for capability binding, tactical state packets, legal action selection, opponent adaptation, initiative transfer, and the action-value gate.
@@ -58,6 +60,8 @@ New tactical state:
 ```
 
 Camera movement must be caused by performance, action vector, spatial change, or consequence. Do not add push-ins, orbits, whip pans, shakes, or tracking solely because the scene is tense or fast.
+
+For effects-bearing or visually complex beats, complete the orchestration packet in `action-vfx-camera-orchestration.md` before final coverage and prompt translation.
 
 ## Coverage
 

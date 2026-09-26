@@ -20,10 +20,11 @@ These tests protect directing quality as the Skill evolves. Run the same briefs 
 14. After package edits, run `scripts/validate_skill.py` before qualitative regression scoring.
 15. For cinematography tests, score the scene-level viewpoint arc, visual-distance curve, support/optical/temporal palette, expressive candidate process, special-technique execution, sequence repetition, and platform handoffs before rewarding isolated “cool shots.”
 16. For movement-language tests, distinguish physical travel from zoom, angle state from elevation movement, and bullet time from ordinary slow motion; require a trigger, observable behavior, landing, and exit state.
+17. For action/VFX/camera tests, score action legality first, then action phase/vector, VFX function, shot function/size, camera relationship, temporal treatment, contact readability, consequence, residual, after-state, and anti-template variation.
 
 ## Core tests
 
-01 dialogue; 02 boss reveal; 03 suspense discovery; 04 forest duel; 05 fire-vs-ice; 06 hyper-speed assault; 07 identity continuity; 08 long-take blocking; 09 daylight VFX; 10 aftermath; 11 spatial previs; 12 reference reconstruction/calibration; 13 skill isolation; 14 adaptive duel; 15 package integrity; 16 cinematography language; 17 POV/aerial/platform handoff; 18 movement/angle/temporal grammar.
+01 dialogue; 02 boss reveal; 03 suspense discovery; 04 forest duel; 05 fire-vs-ice; 06 hyper-speed assault; 07 identity continuity; 08 long-take blocking; 09 daylight VFX; 10 aftermath; 11 spatial previs; 12 reference reconstruction/calibration; 13 skill isolation; 14 adaptive duel; 15 package integrity; 16 cinematography language; 17 POV/aerial/platform handoff; 18 movement/angle/temporal grammar; 19 action/VFX/camera orchestration.
 
 ## Pass rule
 

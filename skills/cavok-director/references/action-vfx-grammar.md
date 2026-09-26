@@ -1,5 +1,7 @@
 # 动作与 VFX
 
+> **职责边界：**本文件定义动作阶段、VFX生命周期、残影/消散/重构和形状语言。动作、特效、运镜与景别如何组合，由 [action-vfx-camera-orchestration.md](action-vfx-camera-orchestration.md) 统一编排；本文件不得建立“一种动作固定对应一种特效或镜头”的映射。
+
 ## 动作结构
 
 动作按 Anticipation → Acceleration → Contact → Compression → Impact → Follow Through → Inertia → Recovery 设计。真人模式遵守重力、惯性、摩擦、平衡、关节极限和受力方向。

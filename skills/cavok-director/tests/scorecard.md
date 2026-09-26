@@ -22,6 +22,7 @@ Score 1–5:
 | Tactical State | Is each major action legal from distance, balance, support, limb, weapon, injury, momentum and control state? |
 | Opponent Agency | Do both sides pursue objectives, observe evidence, adapt credibly and cause visible initiative transfers? |
 | Action Value | Does each retained action change physical, tactical, informational, relational or dramatic state? |
+| Action–VFX–Camera Fit | Does each major beat couple a legal action phase/vector with a justified VFX function, shot function/size, camera relation, temporal treatment, readable contact, consequence and after-state without fixed recipe mapping? |
 | VFX | Are source, material, interaction, timing and residue complete? |
 | Compositing | Would VFX share plate depth, light, blur, optics and texture? |
 | Lighting/Atmosphere | Are source, anchor, direction, landing, exposure and atmosphere physically coherent? |

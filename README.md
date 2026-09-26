@@ -18,7 +18,7 @@
 - `failures/`：生成失败症状、根因与最小修正库
 - `templates/`：Project / Character / Scene / Continuity / Director Review 持久项目模板
 - `scripts/`：包结构、内部引用、隔离标记与重复内容的确定性校验
-- `tests/`：18 项固定导演回归测试与评分卡，包含 Spatial Previs、Reference Reconstruction / Calibration、Skill Isolation、Adaptive Duel、Cinematography Language、POV/Aerial Handoff、Movement/Angle/Temporal Grammar 与 Package Integrity 专项测试
+- `tests/`：19 项固定导演回归测试与评分卡，包含 Spatial Previs、Reference Reconstruction / Calibration、Skill Isolation、Adaptive Duel、Cinematography Language、Movement/Angle/Temporal Grammar、Action–VFX–Camera Orchestration 与 Package Integrity 专项测试
 - `agents/openai.yaml`：Skill UI 元数据
 
 ## 核心导演逻辑
@@ -37,6 +37,7 @@ VFX按真实事件设计：
 
 - Scene Grammar Library：让系统知道“这类戏如何发展”，而不是只知道“镜头怎么拍”。
 - Cinematography Language Engine：以视点、景别、位置/角度、摄影平台、光学、运动拓扑、时间行为七个维度统一选镜；让第一人称、俯拍/顶拍、荷兰角、急推/后拉、变焦、子弹时间、速度渐变、Steadicam、手持、无人机、FPV穿越机与虚拟摄影机在适合时主动进入候选。
+- Action–VFX–Camera Orchestration：把合法动作、动作阶段、力量向量、VFX功能、摄影机关系、镜头职能、景别、时间处理、接触和后果组合成候选方案；明确拳脚、擒拿、投技、刀剑、跳跃、高速位移、投射物、能量束、碰撞、瞬移与变身的适配边界，但不建立固定配方。
 - Combat Decision Engine：通过能力边界、战术状态、合法动作选择、证据驱动的对手适应、主动权转移和动作价值门，防止固定连招、无意义动作与沙袋式对手。
 - Hyperreal Action Direction v2：把人物表演、三维动作调度和摄影机编舞耦合，避免横板格斗、装饰性运镜和机械跟拍。
 - 2D Anime Combat Grammar：独立处理 Key Pose、Silhouette、Variable Timing、Smear、Impact Frame、手绘FX和背景抽象。
@@ -46,7 +47,7 @@ VFX按真实事件设计：
 - Execution Discipline：加入 Approved Lock、Reference Responsibility Contract、Physical State Ledger、Visible State Transition Law、Continuity Risk Anchor、Sound Continuity 与 Shot Complexity Budget。
 - Director Mechanism Library：导演经验按 Activation → Dramatic Problem → Mechanism → Visible Result → Exit → Anti-Trigger 组织，避免只学表面风格标签。
 - Rule Authority Map：同一概念只保留一个规范定义，其他模块仅路由或执行，避免规则复述和版本漂移。
-- Director Regression Tests：当前扩展到 18 项，并加入战术适应、摄影语言、视点/平台交接、运动/角度/时间语法、Skill 隔离和包完整性验证。
+- Director Regression Tests：当前扩展到 19 项，并加入战术适应、摄影语言、运动/角度/时间语法、动作–VFX–摄影编排、Skill 隔离和包完整性验证。
 
 ## 使用
 

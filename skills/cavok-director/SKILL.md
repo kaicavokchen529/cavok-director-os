@@ -37,13 +37,14 @@ Story intent → Scene objective → Drama beat → Scene grammar → Character 
 9. Design playable performance and blocking before camera movement. Preserve contact, weight transfer, reaction order, and cause-and-effect. For combat, bind capabilities without fixing combinations, maintain a tactical state packet, give the opponent evidence-driven agency, and reject actions that do not change physical, tactical, informational, or dramatic state. In hyperreal combat, treat performance tell, action vector, three-dimensional staging, and camera response as a coupled system. In 2D/anime action, also protect key-pose readability, silhouette, timing, spacing, deformation and consequence pose.
 10. Build a scene-level Camera Language Brief before individual coverage: viewpoint baseline and arc, camera temperament, expression permission, visual-distance curve, support, optical and temporal palettes, expressive-technique opportunities, platform handoffs, and repeated defaults to avoid. Then choose framing, position, angle/roll, support, optics, movement topology, temporal behavior, duration, landing, and transition for each shot. For hyperreal combat, every conspicuous camera move must have a performer, force, spatial, or information trigger.
 11. Design action as before state → intention and visible tell → legal action and response → contact / miss / control → force or information transfer → consequence → recovery → after state. For combat, let observed evidence drive adaptation and visible causes drive initiative transfer. In hyperreal combat, extend this into performance tell → load → 3D action vector → camera trigger → action burst → camera choreography → contact → consequence → settle. In 2D/anime combat, translate it into Read Pose → Anticipation → Launch → Burst/Smear → Contact → Consequence Pose → Recovery.
-12. Design VFX or hand-drawn FX as causal events. For major impacts, also design time compression/expansion, impact frames, deformation, shockwave or graphic force lines, camera/graphic response, and recovery.
-13. In photographed or hybrid modes, define how VFX shares plate depth, occlusion, motion blur, focus, lens distortion, interactive light, atmosphere, grain and temporal response. In 2D/anime mode, define line hierarchy, background state, smear, impact tier and FX lifecycle instead.
-14. Design motivated lighting, atmospheric depth, production sound, dialogue, Foley, VFX/FX sound, editorial rhythm, and final image behavior.
-15. Translate the plan into model-appropriate chronological prompts with stable aliases, state anchors, and only failure-specific negatives.
-16. Audit continuity and feasibility. When a generation fails, preserve what works and correct the earliest failing layer plus dependencies.
-17. Record recurring failures and validated reusable lessons; promote only generalizable lessons into reference modules.
-18. After major Skill changes, run the regression tests and compare against the accepted baseline.
+12. For major action beats, orchestrate action phase and 3D vector with VFX function, shot function, camera-vector relationship, shot size, temporal treatment, contact behavior, consequence and residual. Treat all action/VFX/camera/scale mappings as candidates, never fixed recipes.
+13. Design VFX or hand-drawn FX as causal events. For major impacts, also design time compression/expansion, impact frames, deformation, shockwave or graphic force lines, camera/graphic response, and recovery.
+14. In photographed or hybrid modes, define how VFX shares plate depth, occlusion, motion blur, focus, lens distortion, interactive light, atmosphere, grain and temporal response. In 2D/anime mode, define line hierarchy, background state, smear, impact tier and FX lifecycle instead.
+15. Design motivated lighting, atmospheric depth, production sound, dialogue, Foley, VFX/FX sound, editorial rhythm, and final image behavior.
+16. Translate the plan into model-appropriate chronological prompts with stable aliases, state anchors, and only failure-specific negatives.
+17. Audit continuity and feasibility. When a generation fails, preserve what works and correct the earliest failing layer plus dependencies.
+18. Record recurring failures and validated reusable lessons; promote only generalizable lessons into reference modules.
+19. After major Skill changes, run the regression tests and compare against the accepted baseline.
 
 Full contract: [isolation-contract.md](references/isolation-contract.md).
 
@@ -74,6 +75,7 @@ Read only what the current task needs.
 
 ### Action and VFX
 
+- Beat-level action–VFX–camera–shot-size coupling, including action-phase grids, physical/supernatural action family candidates, camera-vector relationships, contact classes, candidate bundles, anti-template memory and AI execution: [action-vfx-camera-orchestration.md](references/action-vfx-camera-orchestration.md)
 - Tactical combat legality, capability boundaries, state packets, opponent adaptation, initiative transfer, action-value gating, and observable after-states: [combat-decision-engine.md](references/combat-decision-engine.md)
 - Fight grammar, tactical beats, safety, ability choreography, and routing into hyperreal action-camera coupling: [action-direction.md](references/action-direction.md)
 - CAVOK conditional fast-cut action signature and spatial safeguards: [cavok-action-signature.md](references/cavok-action-signature.md)
@@ -152,6 +154,15 @@ When directing live-action-feeling or hyperreal CG combat, load `hyperreal-actio
 - Different fighters should have different camera-combat signatures.
 - After contact, show at least one changed state: displacement, stance failure, weapon change, injury, environment damage, advantage reversal, distance change, elevation change, or emotional reassessment.
 - If an AI model cannot execute a complex Hero Camera Move, split at a motivated occlusion or stable state rather than flattening the directing idea into generic lateral coverage.
+
+## Action–VFX–camera orchestration non-negotiables
+
+- Run `action-vfx-camera-orchestration.md` after the action is legal and the scene Camera Language Brief exists. It may couple departments but may not invent capability, physics, or camera style.
+- Select action phase, force vector, VFX function, shot function, camera-vector relationship, shot size, temporal treatment, contact behavior and consequence separately. Tables produce candidates, not automatic pairings.
+- Choose the smallest shot scale that still shows every required cause. Preserve support feet, grips, weapon paths, clearance, contact and landing whenever they determine the action.
+- VFX may clarify precursor, source, vector, speed, contact, force transfer, environment or residual. “No added VFX” is valid; do not turn ordinary physical action into supernatural spectacle without permission.
+- For important beats, compare clarity-led, force/performance-led and expressive bundles. Reject combinations that hide contact, contradict force direction, reset continuity, overload the model, or repeat a recent formula without dramatic purpose.
+- Do not let particles, glow, trails, blur, shake or time effects replace readable displacement, body mechanics, contact and changed after-state.
 
 ## Optics non-negotiables
 
@@ -276,10 +287,11 @@ Unless the user requests another format, deliver:
 4. Shot table with timecode, viewpoint, framing, world-space camera position and angle, support, optics or graphic perspective, trigger/path/temporal behavior/landing, blocking/pose, image, sound, and continuity notes.
 5. Character, environment, camera, optics/graphic rules, lighting/color, atmosphere, VFX/FX and compositing/line-integration locks as appropriate to the medium, plus explicit reference responsibilities when references are used.
 6. For combat, reflect capability boundaries, opponent agency, initiative causes, and changed after-states in the action design; keep the full tactical state packet internal unless requested.
-7. For hyperreal combat, include performer-camera trigger/lead-lag logic and any key Hero Camera Move or camera event when relevant; do not imply a fixed count.
-8. One chronological ready-to-use generation prompt or per-part prompts when duration requires splitting.
-9. A targeted negative prompt.
-10. Continuity, camera-language variety, viewpoint/platform handoff, action readability, physical or graphic plausibility, action-camera coupling, spatial dimensionality, approved-lock preservation, reference-contract compliance, visible state transitions, sound continuity, integration and generation-feasibility checklist.
+7. For action/VFX beats, make the selected action phase, VFX function, camera relation, shot function/scale, temporal treatment, contact and consequence observable in the shot plan without exposing rejected internal bundles.
+8. For hyperreal combat, include performer-camera trigger/lead-lag logic and any key Hero Camera Move or camera event when relevant; do not imply a fixed count.
+9. One chronological ready-to-use generation prompt or per-part prompts when duration requires splitting.
+10. A targeted negative prompt.
+11. Continuity, camera-language variety, viewpoint/platform handoff, action readability, physical or graphic plausibility, action–VFX–camera coupling, spatial dimensionality, approved-lock preservation, reference-contract compliance, visible state transitions, sound continuity, integration and generation-feasibility checklist.
 
 ## Final principle
 

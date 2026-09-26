@@ -165,6 +165,8 @@ Wide / far
 → consequence wide
 ```
 
+This is an illustrative expansion–compression curve, not a required order. Select shot function and scale for the actual action phase through `action-vfx-camera-orchestration.md`; omit, reverse, hold, or reorganize stages when information and performance demand it.
+
 Do not keep the same spatial compression for an entire exchange.
 
 A fight should periodically expand and contract the viewer's perceived distance.

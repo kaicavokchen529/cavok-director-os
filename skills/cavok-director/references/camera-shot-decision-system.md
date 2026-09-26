@@ -71,7 +71,9 @@ Avoid equating low angle with heroism or high angle with weakness automatically.
 Camera position is selected inside one persistent world. Reverse angles, inserts, OTS views, and action coverage may change projection, but must not silently move walls, doors, light anchors, characters, or obstacles. For complex spaces, check the camera position against the spatial previs map before finalizing the shot.
 
 
-| Action | Primary readable position | Optional emphasis |
+The following rows are candidate examples, not a primary-position prescription. For an actual action/VFX beat, let `action-vfx-camera-orchestration.md` select from action phase, vector, contact class, required information, scene camera language, and recent sequence history.
+
+| Action | Common clarity candidate | Optional emphasis candidate |
 |---|---|---|
 | Horizontal sweep | lateral medium-wide | low-angle near pass for pressure and weapon silhouette |
 | Downward strike | three-quarter or lateral full body | defender POV/low angle for vertical threat |
@@ -84,7 +86,7 @@ Camera position is selected inside one persistent world. Reverse angles, inserts
 | Knockback | lateral wide | foreground debris or compressed long lens for force |
 | Charge | frontal retreat or lateral track | long lens for collision pressure |
 
-For a high horizontal sweep, use a low angle when the dramatic goal is dominance, weapon scale, or overhead danger and the target remains readable. Prefer the lateral master when technique, clearance, and evade path matter. Combine them rather than forcing one shot to do both jobs.
+For a high horizontal sweep, consider a low angle when the dramatic goal is dominance, weapon scale, or overhead danger and the target remains readable. Consider the lateral master when technique, clearance, and evade path matter. Combine them only when the beat and execution budget support both functions.
 
 ## 5. Movement grammar
 

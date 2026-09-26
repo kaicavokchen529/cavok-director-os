@@ -12,8 +12,9 @@ Audit the CAVOK Skill after a rule or module change. Confirm that the package re
 - Reject dangling relative links and links escaping the package.
 - Reject machine-specific absolute paths and known external-system identifiers in Markdown.
 - Reject byte-identical Markdown duplicates.
-- Confirm the combat decision engine, cinematography language engine, rule authority map, and isolation contract remain routed from `SKILL.md`.
+- Confirm the combat decision engine, cinematography language engine, action–VFX–camera orchestration, rule authority map, and isolation contract remain routed from `SKILL.md`.
 - Confirm the camera-language contract still distinguishes seven camera dimensions, crash-in from crash zoom, pull-out from zoom-out, overhead angle from elevation movement, and bullet time from ordinary slow motion.
+- Confirm the orchestration contract still treats action/VFX/camera/shot-size matrices as candidates, preserves a no-added-VFX option, and covers physical actions, supernatural actions, camera-vector relations, contact classes and shot-size selection.
 - Confirm model adapters alter execution syntax only, not directing logic.
 
 ## Critical Failures

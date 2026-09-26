@@ -111,6 +111,7 @@ def check_required_routes(errors: list[str]) -> None:
     required = (
         "references/combat-decision-engine.md",
         "references/cinematography-language-engine.md",
+        "references/action-vfx-camera-orchestration.md",
         "references/rule-authority-map.md",
         "references/isolation-contract.md",
     )
@@ -119,6 +120,8 @@ def check_required_routes(errors: list[str]) -> None:
             fail(errors, f"SKILL.md: required route missing: {route}")
     if "combat-decision-engine.md" not in action_text:
         fail(errors, "action-direction.md: combat decision authority is not routed")
+    if "action-vfx-camera-orchestration.md" not in action_text:
+        fail(errors, "action-direction.md: action/VFX/camera orchestration is not routed")
 
 
 def check_camera_language_contract(errors: list[str]) -> None:
@@ -148,6 +151,34 @@ def check_camera_language_contract(errors: list[str]) -> None:
             fail(errors, f"cinematography-language-engine.md: contract missing: {concept}")
 
 
+def check_action_vfx_camera_contract(errors: list[str]) -> None:
+    required_files = (
+        "references/action-vfx-camera-orchestration.md",
+        "failures/action-vfx-camera-template-lock.md",
+        "tests/19_action-vfx-camera-orchestration.md",
+    )
+    for relative in required_files:
+        if not (ROOT / relative).is_file():
+            fail(errors, f"action/VFX/camera contract file missing: {relative}")
+
+    orchestration = ROOT / "references" / "action-vfx-camera-orchestration.md"
+    if not orchestration.is_file():
+        return
+    orchestration_text = orchestration.read_text(encoding="utf-8").lower()
+    required_concepts = (
+        "matrices below generate candidates, not mandatory recipes",
+        "action-phase coupling",
+        "physical action families",
+        "ability and supernatural action families",
+        "camera relationship to action vector",
+        "shot-function and shot-size selection",
+        "no added vfx",
+    )
+    for concept in required_concepts:
+        if concept.lower() not in orchestration_text:
+            fail(errors, f"action-vfx-camera-orchestration.md: contract missing: {concept}")
+
+
 def main() -> int:
     errors: list[str] = []
     if not SKILL.exists():
@@ -160,6 +191,7 @@ def main() -> int:
     check_duplicates(errors)
     check_required_routes(errors)
     check_camera_language_contract(errors)
+    check_action_vfx_camera_contract(errors)
     if errors:
         print(f"CAVOK validation failed: {len(errors)} issue(s)")
         for error in errors:

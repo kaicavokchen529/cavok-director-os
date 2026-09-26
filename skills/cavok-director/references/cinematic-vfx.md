@@ -1,5 +1,7 @@
 # Cinematic VFX Direction
 
+> **Role:** authority for VFX physical causality, material interaction, collision and lifecycle. Use [action-vfx-camera-orchestration.md](action-vfx-camera-orchestration.md) to decide which VFX function belongs to an approved action beat and how camera/shot size should reveal it; this file does not choose choreography or coverage.
+
 ## Contents
 
 1. Physical event model
