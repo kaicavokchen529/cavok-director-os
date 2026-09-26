@@ -220,13 +220,7 @@ Weapon pass, body pass, axial rush, ground skim, motivated axis crossing, foregr
 
 A memorable camera event built specifically around one signature action. It may combine several techniques, but must have one clear causal spine.
 
-Suggested density for a 10–15 second action passage:
-
-- about one Flair 3 Hero Move;
-- two or three Flair 2 moves;
-- the rest Flair 0–1 so the hero move remains meaningful.
-
-Do not make every shot a stunt.
+Do not assign Flair levels by duration or a fixed count. Build hierarchy from dramatic load, action complexity, geography, medium, and the sequence's contrast needs. A passage may contain no Hero Camera Move, one carrying event, or—when the form genuinely supports it—more than one separated hero event. Do not make every shot a stunt, but do not remove a justified expressive candidate merely to satisfy a restraint quota.
 
 ## 8. Camera stunt grammar
 
@@ -242,9 +236,9 @@ A performer crosses near lens; the camera pans or rotates after the body passes,
 
 Camera begins near the ground. A footstep, landing, or launch passes close and triggers camera acceleration upward or forward. The camera is started by the body's force, not by editorial anticipation.
 
-### Axial Crash-In
+### Axial Subject Rush / Yielding Retreat
 
-Attack travels toward camera. Camera retreats more slowly than the performer, causing rapid scale increase. The final strike may pass lens or force a lateral escape.
+Attack travels toward camera. Camera retreats more slowly than the performer, causing rapid scale increase. The final strike may pass lens or force a lateral escape. This is not a camera crash-in: a true crash-in is a rapid physical camera advance toward the subject.
 
 ### Vertical Rise / Dive
 

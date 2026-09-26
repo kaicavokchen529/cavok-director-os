@@ -6,11 +6,11 @@ Design a suspense-to-pursuit sequence in a multilevel transit terminal. A courie
 
 ## Requirements
 
-- Define camera temperament, expression permission, viewpoint baseline, viewpoint arc, visual-distance curve, support palette, optical palette, and end-state relationship.
+- Define camera temperament, expression permission, viewpoint baseline, viewpoint arc, visual-distance curve, support palette, optical palette, temporal palette, and end-state relationship.
 - Generate objective, performance-led, and expressive candidates internally.
 - Consider semi-subjective or first-person access, Steadicam or handheld behavior, an aerial or high-level spatial option, and at least one optical or orientation technique.
 - Select techniques by dramatic and spatial function, not by checklist.
-- Separate shot size, camera position/roll, support, optics, and movement path.
+- Separate shot size, camera position/angle/roll, support, optics, movement path, and temporal behavior.
 - Give conspicuous shots a start frame, trigger, movement curve, landing, hold, and exit.
 - Track repetition across the sequence and preserve readable geography.
 

@@ -121,6 +121,33 @@ def check_required_routes(errors: list[str]) -> None:
         fail(errors, "action-direction.md: combat decision authority is not routed")
 
 
+def check_camera_language_contract(errors: list[str]) -> None:
+    required_files = (
+        "references/cinematography-language-engine.md",
+        "references/camera-movement-grammar.md",
+        "failures/camera-technique-conflation.md",
+        "tests/18_movement-angle-temporal-grammar.md",
+    )
+    for relative in required_files:
+        if not (ROOT / relative).is_file():
+            fail(errors, f"camera-language contract file missing: {relative}")
+
+    engine = ROOT / "references" / "cinematography-language-engine.md"
+    if not engine.is_file():
+        return
+    engine_text = engine.read_text(encoding="utf-8").lower()
+    required_concepts = (
+        "seven independent camera dimensions",
+        "crash-in / 急推",
+        "pull-out / dolly out / 后拉",
+        "true overhead / bird's-eye / 顶拍",
+        "bullet time is not merely slow motion",
+    )
+    for concept in required_concepts:
+        if concept.lower() not in engine_text:
+            fail(errors, f"cinematography-language-engine.md: contract missing: {concept}")
+
+
 def main() -> int:
     errors: list[str] = []
     if not SKILL.exists():
@@ -132,6 +159,7 @@ def main() -> int:
     check_isolation(errors)
     check_duplicates(errors)
     check_required_routes(errors)
+    check_camera_language_contract(errors)
     if errors:
         print(f"CAVOK validation failed: {len(errors)} issue(s)")
         for error in errors:

@@ -83,6 +83,8 @@
 - Support / Operating Palette:
 - Optical Palette:
 - Movement Topology:
+- Angle / Elevation States:
+- Temporal Behavior and Rate Transitions:
 - Expressive Candidate Considered:
 - Special-technique Opportunity:
 - Hero Camera Event:
@@ -92,6 +94,7 @@
 - Reveal Shot:
 - Reaction Shot:
 - Impact Shot:
+- Temporal Entry / Exit State:
 
 ## Lighting / Atmosphere
 

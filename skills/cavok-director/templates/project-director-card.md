@@ -39,11 +39,15 @@
 - Primary Sensor Feel:
 - Preferred Lens Range:
 - Optical Technique Palette:
+- Temporal Treatment Policy:
+- Bullet Time / Slow Motion / Speed Ramp Permission:
 - Default Camera Height:
 - Support / Operating Palette:
 - Aerial / FPV / Cable / Vehicle / Body-Rig Policy:
 - First-person / Semi-subjective Policy:
 - Movement Philosophy:
+- Axial / Lateral / Rotational / Vertical Movement Palette:
+- High / Low / Overhead Angle Policy:
 - Handheld Level:
 - Long Take Policy:
 - Special-technique Activation Conditions:

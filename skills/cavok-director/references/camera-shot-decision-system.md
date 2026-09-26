@@ -1,6 +1,6 @@
 # Camera and Shot Decision System
 
-> **Role:** framing and camera-position execution reference. Run [cinematography-language-engine.md](cinematography-language-engine.md) first for scene-level viewpoint, visual-distance arc, support/optical palette, expressive candidates, and platform handoffs. This file must not independently replace that strategy with a favorite shot or movement.
+> **Role:** framing and camera-position execution reference. Run [cinematography-language-engine.md](cinematography-language-engine.md) first for scene-level viewpoint, visual-distance arc, angle/elevation state, support/optical/temporal palette, expressive candidates, and platform handoffs. This file must not independently replace that strategy with a favorite shot or movement.
 
 ## Contents
 

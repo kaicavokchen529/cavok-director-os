@@ -2,6 +2,17 @@
 
 > **职责边界：**本文件负责已经选定运镜的路径、速度曲线、承载质感、人物—摄影机相位关系与落幅执行。先由 [cinematography-language-engine.md](cinematography-language-engine.md) 决定视点制度、景别曲线、摄影平台、光学策略和表达型候选；本文件不得把情绪关键词自动映射成固定运镜。
 
+## 目录
+
+1. 核心原则与运动曲线
+2. 术语消歧与基础语法
+3. 运动拓扑词典
+4. 组合语法与 Camera Breathing
+5. 时间摄影语法
+6. 动作摄影与炫技层级
+7. 角色摄影签名
+8. 承载、提示词合同与负面规则
+
 ## 核心原则
 
 高级运镜不是“镜头一直动”，而是摄影机知道什么时候开始、为什么移动、何时减速、何时停住。每次运动都必须服务信息、Blocking、情绪、人物表演、动作向量或空间关系。
@@ -30,6 +41,16 @@ Start → Trigger / Motivation → Acceleration → Cruise / Follow / Yield → 
 
 不要默认锁步同步。
 
+## 术语消歧
+
+先区分物理位移、光学变化、机位角度和时间变化，禁止用一个模糊词代替多个机制：
+
+- **急推 / Crash-In**：摄影机沿轴线快速接近，透视与视差改变；若机位不动而焦距快速变长，应写 **Crash Zoom / 急变焦**。
+- **后拉 / Pull-Out**：摄影机真实后撤，空间逐渐展开；若机位不动而焦距变短，应写 **Zoom-Out / 拉远变焦**。
+- **俯拍 / High Angle**：高于主体并向下看，是角度状态；**顶拍 / True Overhead** 接近垂直向下；Crane Down、Dive、Tilt Down 才是运动。
+- **子弹时间 / Bullet Time**：主体或世界近乎冻结而摄影机仍获得空间位移；普通慢动作只改变时间倍率，两者不得混写。
+- **甩镜 / Whip Pan**：快速旋转视线；**横移 / Truck** 是摄影机位置真实横向改变。
+
 ## 基础语法
 
 - Dolly In：压缩心理距离、确认、逼近、进入角色判断。动作场面中必须有认知、关系或不可逆决定作为触发；禁止把“战斗开始”本身当成急推理由。
@@ -41,6 +62,51 @@ Start → Trigger / Motivation → Acceleration → Cruise / Follow / Yield → 
 - Arc/Orbit：仅在需要读清前后站位、关系重组、绕开攻击轴或完成可见越轴时使用。禁止把orbit当“高级感”。
 - Handheld：用于身体临场、危险、主观压力，幅度受控。
 - Steadicam/Gimbal：连续调度与人物空间关系。
+
+## 运动拓扑词典
+
+### 轴向
+
+- Push-In / Dolly In：受控接近；主体占比增加，视差随物理距离改变。
+- Crash-In / 急推：由认知、攻击承诺、空间突破或不可逆决定触发的高速接近；必须设计制动与落幅。
+- Pull-Out / Dolly Out / 后拉：退出亲密距离、释放压力、显露关系或把后果放回空间。
+- Reverse Pull：面对推进中的人物、攻击或冲击反向后撤，摄影机与主体速度差决定尺度增长。
+- Pull-Back Reveal：从局部、细节或误导性关系后撤，揭露更大空间事实。
+- Axial Retreat：沿人物推进轴退让，可让人物追上镜头、保持距离或逐渐被空间吞没。
+
+### 横向与纵深
+
+- Truck / Lateral Track：真实横移并产生视差。
+- Parallel Follow：与主体平行移动，维持关系距离。
+- Diagonal Converge / Diverge：同时改变横向关系与纵深距离。
+- Depth Pursuit：沿画面纵深追入或退出，避免动作全部侧拍。
+- Foreground Reveal / Conceal：借前景遮挡显露、隐藏、换平台或隐藏剪辑。
+- Crossing Pass：人物或物体近镜掠过，改变前后关系或完成接力。
+
+### 旋转
+
+- Pan / Tilt：重分配水平或垂直信息。
+- Whip Pan / Whip Tilt：从明确起点目标快速甩向明确终点目标，落幅必须可读。
+- Arc：有限角度改变双方关系。
+- Orbit：持续绕行，仅用于关系、仪式、空间或感知发生整体变化。
+- Roll：改变地平线状态，必须包含触发、峰值与恢复/切出。
+- Pivot / Reverse Look：围绕摄影机支点改变信息场，不伪装成空间位移。
+
+### 垂直
+
+- Pedestal / Boom：主要改变高度，平面位置变化较小。
+- Crane Rise / Descent：连接楼层、权力层级、系统与个体。
+- Vertical Dive / Drop：沿坠落、俯冲或发现路径快速下降。
+- Ground-Skim Rise：从接触层贴地运动后抬升到身体或空间信息。
+- Overhead Transition：从斜角或平视连续过渡到顶拍，让方向重组过程可见。
+- Top-Shot Ascent / Descent：在真正顶拍关系中接近或远离地面，保护人物与运动方向。
+
+### 静止与反应
+
+- Locked Hold：机位不动，让表演、走位、焦点、光线或环境改变构图。
+- Reframe / Correction：人物或信息先变化，摄影机再修正。
+- Delayed Catch-Up：允许主体短暂偏离最佳构图，再重新捕捉。
+- Intentional Refusal：摄影机故意不跟，使离场、撞击或后果发生在边缘或画外。
 
 ## 组合语法
 
@@ -58,7 +124,7 @@ Start → Trigger / Motivation → Acceleration → Cruise / Follow / Yield → 
 - Weapon Pass Transition：武器近镜掠过形成遮挡，用于换位、换轴、换焦段或隐藏剪辑；武器必须真实经过该空间。
 - Body Pass Reframe：角色贴近镜头穿过后，摄影机再pan/rotate抓住下一攻击关系。
 - Ground-Skim Launch：贴地机位由脚步、落地或蹬地动作触发，随后前冲或抬升。
-- Axial Crash-In：攻击者沿镜头轴从远到近，摄影机后撤但慢于角色，制造快速尺度增长。
+- Axial Subject Rush + Yielding Retreat：攻击者沿镜头轴从远到近，摄影机后撤但慢于角色，利用人物与摄影机的速度差制造快速尺度增长；这不是摄影机向前急推。
 - Vertical Rise / Dive：镜头高度随真实跃起、俯冲、坠落、台阶或高差变化。
 - Reverse Pull：命中或击飞后摄影机向反方向拉开，迅速放大位移结果。
 - Motivated Axis Crossing：角色、前景或清晰弧线带摄影机跨轴；观众必须能看到换轴过程。
@@ -86,6 +152,19 @@ Hold → Character Tell → Character Launch → Camera Response → Spatial Exp
 ## Dolly Zoom
 
 仅用于空间感或心理空间真正发生变化时。幅度克制，主体大小保持相对稳定，背景透视缓慢改变。禁止把它当“高级感”装饰。
+
+## 时间摄影语法
+
+时间处理必须写清主体时间、摄影机时间、环境时间、声音时间与恢复正常时间的节点。
+
+- **Slow Motion / Overcrank**：扩展决定、机制、表演、接触或后果，不等于子弹时间。
+- **Undercrank / Accelerated Motion**：压缩动作时长、提高急迫感，但不能牺牲关键接触可读性。
+- **Speed Ramp**：从一个倍率过渡到另一个倍率；写清起始倍率、触发动作、变化峰值和恢复点。
+- **Bullet Time / Time Slice**：锁定一个值得空间检查的瞬间，主体/环境近冻结，摄影机沿可读路径获得新的视差信息，再由明确动作或声音恢复正常时间。
+- **Freeze Frame**：剪辑层冻结单帧；与“世界被冻结但摄影机仍移动”分开描述。
+- **Subjective Time Dilation**：角色感知被拉长，外部因果和返回现实时间的状态必须连续。
+
+子弹时间不得默认做360度环绕。可使用短弧检查、横向切片、轴向穿行、顶拍检查、多主体关系显露。必须保持弹道、碎屑、衣发、表情、身体受力和声音状态在同一时间规则下。
 
 ## Action Camera
 
@@ -147,10 +226,10 @@ Camera Flair分级：
 
 ## Prompt Contract
 
-英文摄影提示词以 Camera Movement 开头，并写明：Support + Angle + Lens + Start Position + Character Trigger + Lead/Lag Relationship + Direction + Speed Curve + Framing Evolution + Contact Behavior + Settle/Hold + Director Intent。
+英文摄影提示词以 Camera Movement 开头，并写明：Support + Angle + Lens + Start Position + Character Trigger + Lead/Lag Relationship + Direction + Speed Curve + Framing Evolution + Temporal Behavior + Contact Behavior + Settle/Hold + Director Intent。
 
 动作Prompt必须分开写人物运动与摄影机运动，但保持因果连接。
 
 ## Negative
 
-禁止随机漂移、无理由Zoom、机械匀速推拉摇移、持续Orbit、无动机360度、频繁Whip Pan、无来源震镜、摄影机穿越实体、每镜都推近、没有停点、摄影机提前替人物释放张力、连续侧面中全景把战斗拍成横版格斗、人物和摄影机每次都锁步同步。
+禁止随机漂移、无理由Zoom、机械匀速推拉摇移、持续Orbit、无动机360度、频繁Whip Pan、无来源震镜、摄影机穿越实体、每镜都推近、每次后果都后拉、每次高潮都升格或子弹时间、所有俯拍都旋转、没有停点、摄影机提前替人物释放张力、连续侧面中全景把战斗拍成横版格斗、人物和摄影机每次都锁步同步。

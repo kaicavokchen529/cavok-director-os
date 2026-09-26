@@ -24,7 +24,7 @@ The shot plan is technically clear but repeatedly falls back to eye-level third-
 
 ## Fix
 
-Run `cinematography-language-engine.md` before detailed shot design. Build the Camera Language Brief, generate three internal candidates, select the six camera dimensions independently, and apply the sequence-memory audit. Preserve the safest candidate only when it wins for a stated reason.
+Run `cinematography-language-engine.md` before detailed shot design. Build the Camera Language Brief, generate three internal candidates, select the seven camera dimensions independently, and apply the sequence-memory audit. Preserve the safest candidate only when it wins for a stated reason.
 
 ## Preventive rule
 

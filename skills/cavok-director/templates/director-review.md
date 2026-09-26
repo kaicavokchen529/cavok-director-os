@@ -23,6 +23,9 @@
 - Visual-distance curve served the scene:
 - Support showed visible operating character:
 - Optics and physical movement remained distinct:
+- Angle state and camera movement remained distinct:
+- Temporal treatment revealed information rather than decorating the beat:
+- Bullet time / slow motion / speed ramp entry and exit preserved causality:
 - Expressive candidate was considered:
 - Special technique was earned and legible:
 - Aerial / FPV / first-person / platform handoffs preserved state:
